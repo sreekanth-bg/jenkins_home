@@ -1,0 +1,31 @@
+Started by user [8mha:////4FBe+bRoZBGwJBbpyEH285QJlto1RiiY81dXiB+4eDejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/nodejs-app
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sreekanth-bg/docker-demo.git
+ > git init /var/jenkins_home/workspace/nodejs-app # timeout=10
+Fetching upstream changes from https://github.com/sreekanth-bg/docker-demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+ > git fetch --tags --progress -- https://github.com/sreekanth-bg/docker-demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sreekanth-bg/docker-demo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+Commit message: "corrected image"
+First time build. Skipping changelog.
+Unpacking https://nodejs.org/dist/v7.1.0/node-v7.1.0-linux-x64.tar.gz to /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs on Jenkins
+[nodejs-app] $ docker build -t infovein69 / docker-nodejs-demo --pull=true /var/jenkins_home/workspace/nodejs-app
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | - [flags]
+
+Build an image from a Dockerfile
+Build step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE

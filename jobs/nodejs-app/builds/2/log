@@ -1,0 +1,1431 @@
+Started by user [8mha:////4FBe+bRoZBGwJBbpyEH285QJlto1RiiY81dXiB+4eDejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/nodejs-app
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sreekanth-bg/docker-demo.git # timeout=10
+Fetching upstream changes from https://github.com/sreekanth-bg/docker-demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+ > git fetch --tags --progress -- https://github.com/sreekanth-bg/docker-demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+Commit message: "corrected image"
+ > git rev-list --no-walk ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+[nodejs-app] $ docker build -t infovein69/docker-nodejs-demo --pull=true /var/jenkins_home/workspace/nodejs-app
+Sending build context to Docker daemon  196.1kB
+Step 1/6 : FROM node:4.6
+4.6: Pulling from library/node
+386a066cd84a: Pulling fs layer
+75ea84187083: Pulling fs layer
+88b459c9f665: Pulling fs layer
+1e3ee139a577: Pulling fs layer
+f78ff7d0315b: Pulling fs layer
+f4ba677961ff: Pulling fs layer
+21db8c3555aa: Pulling fs layer
+1e3ee139a577: Waiting
+f78ff7d0315b: Waiting
+f4ba677961ff: Waiting
+21db8c3555aa: Waiting
+75ea84187083: Verifying Checksum
+75ea84187083: Download complete
+88b459c9f665: Verifying Checksum
+88b459c9f665: Download complete
+386a066cd84a: Verifying Checksum
+386a066cd84a: Download complete
+f78ff7d0315b: Verifying Checksum
+f78ff7d0315b: Download complete
+f4ba677961ff: Verifying Checksum
+f4ba677961ff: Download complete
+21db8c3555aa: Verifying Checksum
+21db8c3555aa: Download complete
+1e3ee139a577: Verifying Checksum
+1e3ee139a577: Download complete
+386a066cd84a: Pull complete
+75ea84187083: Pull complete
+88b459c9f665: Pull complete
+1e3ee139a577: Pull complete
+f78ff7d0315b: Pull complete
+f4ba677961ff: Pull complete
+21db8c3555aa: Pull complete
+Digest: sha256:a1cc6d576734c331643f9c4e0e7f572430e8baf9756dc24dab11d87b34bd202e
+Status: Downloaded newer image for node:4.6
+ ---> e834398209c1
+Step 2/6 : WORKDIR /app
+ ---> Running in d643e0e9a38c
+Removing intermediate container d643e0e9a38c
+ ---> f4cbcbe1b64c
+Step 3/6 : ADD . /app
+ ---> a828b79028c3
+Step 4/6 : RUN npm install
+ ---> Running in 1e24ea76f297
+[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91mit worked if it ends with[0m[91m ok
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91musing[0m[91m npm@2.15.11
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91musing[0m[91m node@v4.6.2
+[0m[91mnpm[0m[91m info preinstall myapp@0.0.1
+[0m[91mnpm[0m[91m info [0m[91mattempt[0m[91m registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m http request GET https://registry.npmjs.org/express
+[0m[91mnpm[0m[91m info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m http request GET https://registry.npmjs.org/http-errors
+[0m[91mnpm[0m[91m info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m http request GET https://registry.npmjs.org/mysql
+[0m[91mnpm[0m[91m info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m http request GET https://registry.npmjs.org/inherits
+[0m[91mnpm [0m[91minfo attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m http request GET https://registry.npmjs.org/mocha
+[0m[91mnpm[0m[91m info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m [0m[91mhttp request[0m[91m GET https://registry.npmjs.org/ms
+[0m[91mnpm [0m[91mhttp 200 https://registry.npmjs.org/http-errors
+[0m[91mnpm http 200 https://registry.npmjs.org/mysql
+[0m[91mnpm[0m[91m http 200 https://registry.npmjs.org/inherits
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/ms
+[0m[91mnpm [0m[91minfo retry[0m[91m fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info[0m[91m attempt[0m[91m registry request try #1 at 4:50:01 PM
+[0m[91mnpm http[0m[91m fetch GET https://registry.npmjs.org/mysql/-/mysql-2.18.1.tgz
+[0m[91mnpm info[0m[91m retry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:01 PM
+[0m[91mnpm[0m[91m http fetch GET https://registry.npmjs.org/http-errors/-/http-errors-1.8.0.tgz
+[0m[91mnpm info [0m[91mretry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info [0m[91mattempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http [0m[91mfetch GET https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz
+[0m[91mnpm[0m[91m [0m[91mhttp fetch[0m[91m 200 https://registry.npmjs.org/mysql/-/mysql-2.18.1.tgz
+[0m[91mnpm http [0m[91mfetch 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/http-errors/-/http-errors-1.8.0.tgz
+[0m[91mnpm info [0m[91mretry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http fetch[0m[91m GET https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+[0m[91mnpm http [0m[91m200 https://registry.npmjs.org/express
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info [0m[91mattempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/express/-/express-4.17.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/express/-/express-4.17.1.tgz
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/mocha
+[0m[91mnpm info [0m[91mretry fetch attempt 1 at 4:50:01 PM
+npm info [0m[91mattempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/mocha/-/mocha-5.2.0.tgz
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/mocha/-/mocha-5.2.0.tgz
+[0m[91mnpm info install inherits@2.0.4 into /app
+[0m[91mnpm info install http-errors@1.8.0 into /app
+npm info install ms@2.1.2 into /app
+[0m[91mnpm info install mysql@2.18.1 into /app
+npm info[0m[91m install express@4.17.1 into /app
+npm info [0m[91minstall mocha@5.2.0 into /app
+[0m[91mnpm info installOne inherits@2.0.4
+[0m[91mnpm info installOne http-errors@1.8.0
+[0m[91mnpm info installOne ms@2.1.2
+[0m[91mnpm info installOne mysql@2.18.1
+[0m[91mnpm info installOne express@4.17.1
+[0m[91mnpm info installOne[0m[91m mocha@5.2.0
+[0m[91mnpm info preinstall[0m[91m ms@2.1.2
+[0m[91mnpm info preinstall inherits@2.0.4
+[0m[91mnpm info preinstall[0m[91m http-errors@1.8.0
+[0m[91mnpm info build /app/node_modules/ms
+[0m[91mnpm info build /app/node_modules/inherits
+[0m[91mnpm info[0m[91m linkStuff ms@2.1.2
+[0m[91mnpm[0m[91m info attempt[0m[91m registry request try #1 at 4:50:01 PM
+[0m[91mnpm http[0m[91m request GET https://registry.npmjs.org/statuses
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/toidentifier
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/depd
+[0m[91mnpm info [0m[91mattempt registry request try #1 at 4:50:01 PM
+npm[0m[91m http request GET https://registry.npmjs.org/setprototypeof
+[0m[91mnpm info linkStuff[0m[91m inherits@2.0.4
+[0m[91mnpm [0m[91minfo install ms@2.1.2
+[0m[91mnpm info postinstall ms@2.1.2
+[0m[91mnpm [0m[91mhttp 200[0m[91m https://registry.npmjs.org/setprototypeof
+[0m[91mnpm http 200 https://registry.npmjs.org/toidentifier
+[0m[91mnpm http 200 https://registry.npmjs.org/statuses
+[0m[91mnpm info install inherits@2.0.4
+[0m[91mnpm http 200 https://registry.npmjs.org/depd
+[0m[91mnpm info postinstall inherits@2.0.4
+[0m[91mnpm info retry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info [0m[91mattempt registry request try #1 at 4:50:01 PM
+npm http fetch[0m[91m GET https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:01 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/depd/-/depd-1.1.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/depd/-/depd-1.1.2.tgz
+[0m[91mnpm info install setprototypeof@1.2.0 into /app/node_modules/http-errors
+[0m[91mnpm info install statuses@1.5.0 into /app/node_modules/http-errors
+npm info install toidentifier@1.0.0 into /app/node_modules/http-errors
+npm info install[0m[91m depd@1.1.2 into /app/node_modules/http-errors
+npm info installOne setprototypeof@1.2.0
+[0m[91mnpm info installOne statuses@1.5.0
+[0m[91mnpm info installOne toidentifier@1.0.0
+[0m[91mnpm [0m[91minfo installOne depd@1.1.2
+[0m[91mnpm info preinstall express@4.17.1
+[0m[91mnpm info attempt registry request try #1 at 4:50:01 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/array-flatten
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/body-parser
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/content-disposition
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/content-type
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/cookie
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/cookie-signature
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/debug
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/encodeurl
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/escape-html
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/etag
+[0m[91mnpm [0m[91minfo[0m[91m [0m[91mattempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m [0m[91mhttp[0m[91m [0m[91mrequest[0m[91m GET https://registry.npmjs.org/finalhandler
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91mattempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m [0m[91mhttp[0m[91m [0m[91mrequest[0m[91m GET https://registry.npmjs.org/fresh
+[0m[91mnpm [0m[91minfo attempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m [0m[91mhttp[0m[91m request[0m[91m GET https://registry.npmjs.org/merge-descriptors
+[0m[91mnpm[0m[91m info [0m[91mattempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m http[0m[91m [0m[91mrequest[0m[91m GET https://registry.npmjs.org/methods
+[0m[91mnpm [0m[91minfo [0m[91mattempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m http[0m[91m [0m[91mrequest GET https://registry.npmjs.org/on-finished
+[0m[91mnpm[0m[91m info [0m[91mattempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m http[0m[91m [0m[91mrequest GET https://registry.npmjs.org/parseurl
+[0m[91mnpm [0m[91minfo attempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm[0m[91m http request[0m[91m GET https://registry.npmjs.org/path-to-regexp
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91mattempt[0m[91m registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/proxy-addr
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/qs
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/range-parser
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/safe-buffer
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/send
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/serve-static
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request[0m[91m GET https://registry.npmjs.org/type-is
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/utils-merge
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request[0m[91m GET https://registry.npmjs.org/vary
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:02 PM
+npm[0m[91m http request GET https://registry.npmjs.org/accepts
+[0m[91mnpm http 200 https://registry.npmjs.org/array-flatten
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.1.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/cookie-signature
+[0m[91mnpm http 200 https://registry.npmjs.org/content-type
+[0m[91mnpm http 200 https://registry.npmjs.org/etag
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/content-disposition
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/cookie
+[0m[91mnpm http 200 https://registry.npmjs.org/fresh
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.1.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/encodeurl
+[0m[91mnpm http 200 https://registry.npmjs.org/merge-descriptors
+[0m[91mnpm http 200 https://registry.npmjs.org/on-finished
+[0m[91mnpm http [0m[91m200 https://registry.npmjs.org/escape-html
+[0m[91mnpm http 200 https://registry.npmjs.org/vary
+[0m[91mnpm http 200 https://registry.npmjs.org/methods
+[0m[91mnpm http 200 https://registry.npmjs.org/utils-merge
+[0m[91mnpm http 200 https://registry.npmjs.org/safe-buffer
+[0m[91mnpm http 200 https://registry.npmjs.org/finalhandler
+[0m[91mnpm http 200 https://registry.npmjs.org/body-parser
+[0m[91mnpm http 200 https://registry.npmjs.org/accepts
+[0m[91mnpm http 200 https://registry.npmjs.org/range-parser
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/serve-static
+[0m[91mnpm http 200 https://registry.npmjs.org/type-is
+[0m[91mnpm http 200 https://registry.npmjs.org/proxy-addr
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:02 PM
+npm[0m[91m info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http [0m[91mfetch GET https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/debug
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/path-to-regexp
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/send
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:02 PM
+npm[0m[91m info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http [0m[91mfetch GET https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch[0m[91m GET https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.3.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch[0m[91m GET https://registry.npmjs.org/cookie/-/cookie-0.4.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:02 PM
+npm http[0m[91m fetch GET https://registry.npmjs.org/etag/-/etag-1.8.1.tgz
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:02 PM
+npm [0m[91minfo attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.3.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch[0m[91m GET https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz
+[0m[91mnpm info [0m[91mretry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info[0m[91m attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http[0m[91m fetch GET https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http [0m[91mfetch GET https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:02 PM
+npm[0m[91m info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info [0m[91mattempt registry request try #1 at 4:50:02 PM
+npm http fetch[0m[91m GET https://registry.npmjs.org/vary/-/vary-1.1.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/methods/-/methods-1.1.2.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/qs
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/etag/-/etag-1.8.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/cookie/-/cookie-0.4.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/methods/-/methods-1.1.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+npm http fetch GET https://registry.npmjs.org/serve-static/-/serve-static-1.14.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+npm http fetch GET https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/parseurl
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+npm http fetch GET https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.6.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/debug/-/debug-2.6.9.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/vary/-/vary-1.1.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/send/-/send-0.17.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/serve-static/-/serve-static-1.14.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz
+[0m[91mnpm info preinstall toidentifier@1.0.0
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.6.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/send/-/send-0.17.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/qs/-/qs-6.7.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:02 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/qs/-/qs-6.7.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz
+[0m[91mnpm info preinstall setprototypeof@1.2.0
+[0m[91mnpm info build /app/node_modules/http-errors/node_modules/toidentifier
+[0m[91mnpm info preinstall statuses@1.5.0
+[0m[91mnpm info linkStuff toidentifier@1.0.0
+[0m[91mnpm info install depd@1.1.2 into /app/node_modules/express
+npm info install statuses@1.5.0 into /app/node_modules/express
+npm info install setprototypeof@1.1.1 into /app/node_modules/express
+[0m[91mnpm info install array-flatten@1.1.1 into /app/node_modules/express
+npm info install cookie-signature@1.0.6 into /app/node_modules/express
+npm[0m[91m info install content-disposition@0.5.3 into /app/node_modules/express
+npm info install etag@1.8.1 into /app/node_modules/express
+npm info install fresh@0.5.2 into /app/node_modules/express
+npm info install content-type@1.0.4 into /app/node_modules/express
+[0m[91mnpm info install merge-descriptors@1.0.1 into /app/node_modules/express
+npm info install utils-merge@1.0.1 into /app/node_modules/express
+npm[0m[91m info install cookie@0.4.0 into /app/node_modules/express
+npm[0m[91m info install encodeurl@1.0.2 into /app/node_modules/express
+npm[0m[91m info install methods@1.1.2 into /app/node_modules/express
+npm[0m[91m info install on-finished@2.3.0 into /app/node_modules/express
+npm[0m[91m info install escape-html@1.0.3 into /app/node_modules/express
+npm[0m[91m info install safe-buffer@5.1.2 into /app/node_modules/express
+npm info[0m[91m install finalhandler@1.1.2 into /app/node_modules/express
+npm info install[0m[91m vary@1.1.2 into /app/node_modules/express
+npm info install type-is@1.6.18 into /app/node_modules/express
+[0m[91mnpm info install serve-static@1.14.1 into /app/node_modules/express
+[0m[91mnpm info install body-parser@1.19.0 into /app/node_modules/express
+[0m[91mnpm info install accepts@1.3.7 into /app/node_modules/express
+[0m[91mnpm info install range-parser@1.2.1 into /app/node_modules/express
+[0m[91mnpm info install proxy-addr@2.0.6 into /app/node_modules/express
+[0m[91mnpm info install path-to-regexp@0.1.7 into /app/node_modules/express
+[0m[91mnpm info install[0m[91m send@0.17.1 into /app/node_modules/express
+[0m[91mnpm info install[0m[91m debug@2.6.9 into /app/node_modules/express
+npm info install qs@6.7.0 into /app/node_modules/express
+[0m[91mnpm info install parseurl@1.3.3 into /app/node_modules/express
+npm[0m[91m info installOne depd@1.1.2
+[0m[91mnpm info installOne statuses@1.5.0
+[0m[91mnpm info installOne setprototypeof@1.1.1
+[0m[91mnpm info installOne array-flatten@1.1.1
+[0m[91mnpm info installOne cookie-signature@1.0.6
+[0m[91mnpm info installOne content-disposition@0.5.3
+[0m[91mnpm info installOne etag@1.8.1
+[0m[91mnpm info installOne fresh@0.5.2
+[0m[91mnpm info installOne content-type@1.0.4
+[0m[91mnpm info installOne merge-descriptors@1.0.1
+[0m[91mnpm info installOne utils-merge@1.0.1
+[0m[91mnpm info installOne cookie@0.4.0
+[0m[91mnpm info installOne encodeurl@1.0.2
+[0m[91mnpm info installOne methods@1.1.2
+[0m[91mnpm info installOne on-finished@2.3.0
+[0m[91mnpm info installOne escape-html@1.0.3
+[0m[91mnpm info installOne safe-buffer@5.1.2
+[0m[91mnpm info installOne finalhandler@1.1.2
+[0m[91mnpm info installOne vary@1.1.2
+[0m[91mnpm info installOne type-is@1.6.18
+[0m[91mnpm info installOne serve-static@1.14.1
+[0m[91mnpm info installOne body-parser@1.19.0
+[0m[91mnpm info installOne accepts@1.3.7
+[0m[91mnpm info installOne range-parser@1.2.1
+[0m[91mnpm info installOne proxy-addr@2.0.6
+[0m[91mnpm info installOne path-to-regexp@0.1.7
+[0m[91mnpm info installOne send@0.17.1
+[0m[91mnpm info installOne debug@2.6.9
+[0m[91mnpm info installOne qs@6.7.0
+[0m[91mnpm info installOne parseurl@1.3.3
+[0m[91mnpm info build /app/node_modules/http-errors/node_modules/setprototypeof
+[0m[91mnpm info install toidentifier@1.0.0
+[0m[91mnpm info postinstall toidentifier@1.0.0
+[0m[91mnpm info preinstall depd@1.1.2
+[0m[91mnpm info build /app/node_modules/http-errors/node_modules/statuses
+[0m[91mnpm info linkStuff setprototypeof@1.2.0
+[0m[91mnpm info install setprototypeof@1.2.0
+[0m[91mnpm info linkStuff statuses@1.5.0
+[0m[91mnpm info postinstall setprototypeof@1.2.0
+[0m[91mnpm info install statuses@1.5.0
+[0m[91mnpm info postinstall statuses@1.5.0
+[0m[91mnpm info build /app/node_modules/http-errors/node_modules/depd
+[0m[91mnpm info linkStuff depd@1.1.2
+[0m[91mnpm info install depd@1.1.2
+[0m[91mnpm info postinstall depd@1.1.2
+[0m[91mnpm info build /app/node_modules/http-errors
+[0m[91mnpm info preinstall escape-html@1.0.3
+[0m[91mnpm info linkStuff http-errors@1.8.0
+[0m[91mnpm info preinstall array-flatten@1.1.1
+[0m[91mnpm info preinstall utils-merge@1.0.1
+[0m[91mnpm info preinstall cookie-signature@1.0.6
+[0m[91mnpm info preinstall content-type@1.0.4
+[0m[91mnpm info preinstall merge-descriptors@1.0.1
+[0m[91mnpm info preinstall methods@1.1.2
+[0m[91mnpm info preinstall encodeurl@1.0.2
+[0m[91mnpm info install http-errors@1.8.0
+[0m[91mnpm info preinstall fresh@0.5.2
+[0m[91mnpm info preinstall etag@1.8.1
+[0m[91mnpm info preinstall on-finished@2.3.0
+[0m[91mnpm info preinstall finalhandler@1.1.2
+[0m[91mnpm info preinstall type-is@1.6.18
+[0m[91mnpm info preinstall serve-static@1.14.1
+npm info preinstall vary@1.1.2
+[0m[91mnpm info preinstall cookie@0.4.0
+[0m[91mnpm info preinstall accepts@1.3.7
+npm info preinstall range-parser@1.2.1
+[0m[91mnpm info preinstall proxy-addr@2.0.6
+npm info preinstall path-to-regexp@0.1.7
+[0m[91mnpm info preinstall content-disposition@0.5.3
+[0m[91mnpm info preinstall parseurl@1.3.3
+[0m[91mnpm info postinstall http-errors@1.8.0
+[0m[91mnpm info preinstall safe-buffer@5.1.2
+[0m[91mnpm info preinstall send@0.17.1
+[0m[91mnpm info preinstall setprototypeof@1.1.1
+[0m[91mnpm info preinstall statuses@1.5.0
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/escape-html
+[0m[91mnpm info build /app/node_modules/express/node_modules/array-flatten
+[0m[91mnpm info build /app/node_modules/express/node_modules/utils-merge
+[0m[91mnpm info build /app/node_modules/express/node_modules/cookie-signature
+[0m[91mnpm info build /app/node_modules/express/node_modules/statuses
+[0m[91mnpm info build /app/node_modules/express/node_modules/content-type
+[0m[91mnpm info build /app/node_modules/express/node_modules/merge-descriptors
+[0m[91mnpm info build /app/node_modules/express/node_modules/encodeurl
+[0m[91mnpm info build /app/node_modules/express/node_modules/methods
+[0m[91mnpm info build /app/node_modules/express/node_modules/fresh
+[0m[91mnpm info build /app/node_modules/express/node_modules/etag
+[0m[91mnpm info build /app/node_modules/express/node_modules/vary
+[0m[91mnpm info build /app/node_modules/express/node_modules/serve-static
+[0m[91mnpm info build /app/node_modules/express/node_modules/cookie
+[0m[91mnpm info build /app/node_modules/express/node_modules/range-parser
+[0m[91mnpm info build /app/node_modules/express/node_modules/content-disposition
+[0m[91mnpm info build /app/node_modules/express/node_modules/path-to-regexp
+[0m[91mnpm info linkStuff escape-html@1.0.3
+[0m[91mnpm info build /app/node_modules/express/node_modules/parseurl
+[0m[91mnpm info linkStuff array-flatten@1.1.1
+[0m[91mnpm info build /app/node_modules/express/node_modules/safe-buffer
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/ee-first
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/unpipe
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/media-typer
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/mime-types
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/forwarded
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/negotiator
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/ipaddr.js
+[0m[91mnpm info linkStuff statuses@1.5.0
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+npm http request GET https://registry.npmjs.org/destroy
+[0m[91mnpm info attempt registry request try #1 at 4:50:02 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/mime
+[0m[91mnpm info build /app/node_modules/express/node_modules/setprototypeof
+[0m[91mnpm info linkStuff utils-merge@1.0.1
+[0m[91mnpm info linkStuff cookie-signature@1.0.6
+[0m[91mnpm http 200 https://registry.npmjs.org/ee-first
+[0m[91mnpm info linkStuff content-type@1.0.4
+[0m[91mnpm info linkStuff merge-descriptors@1.0.1
+[0m[91mnpm info linkStuff encodeurl@1.0.2
+[0m[91mnpm info linkStuff methods@1.1.2
+[0m[91mnpm info install escape-html@1.0.3
+[0m[91mnpm http 200 https://registry.npmjs.org/negotiator
+[0m[91mnpm info install array-flatten@1.1.1
+[0m[91mnpm info linkStuff fresh@0.5.2
+[0m[91mnpm info linkStuff etag@1.8.1
+[0m[91mnpm info linkStuff vary@1.1.2
+[0m[91mnpm info linkStuff serve-static@1.14.1
+[0m[91mnpm info linkStuff cookie@0.4.0
+[0m[91mnpm info linkStuff range-parser@1.2.1
+[0m[91mnpm info linkStuff content-disposition@0.5.3
+[0m[91mnpm info linkStuff path-to-regexp@0.1.7
+[0m[91mnpm info linkStuff parseurl@1.3.3
+[0m[91mnpm http 200 https://registry.npmjs.org/ipaddr.js
+[0m[91mnpm http 200 https://registry.npmjs.org/destroy
+[0m[91mnpm info postinstall escape-html@1.0.3
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/http-errors/-/http-errors-1.7.3.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/ms/-/ms-2.1.1.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/unpipe
+[0m[91mnpm http 200 https://registry.npmjs.org/forwarded
+[0m[91mnpm info postinstall array-flatten@1.1.1
+[0m[91mnpm info linkStuff safe-buffer@5.1.2
+[0m[91mnpm info install statuses@1.5.0
+[0m[91mnpm http 200 https://registry.npmjs.org/mime-types
+[0m[91mnpm http 200 https://registry.npmjs.org/media-typer
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/ms/-/ms-2.1.1.tgz
+[0m[91mnpm info postinstall statuses@1.5.0
+[0m[91mnpm http 200 https://registry.npmjs.org/mime
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/http-errors/-/http-errors-1.7.3.tgz
+[0m[91mnpm info preinstall depd@1.1.2
+[0m[91mnpm info install utils-merge@1.0.1
+[0m[91mnpm info install cookie-signature@1.0.6
+[0m[91mnpm info linkStuff setprototypeof@1.1.1
+[0m[91mnpm info install content-type@1.0.4
+[0m[91mnpm info install merge-descriptors@1.0.1
+[0m[91mnpm info install encodeurl@1.0.2
+[0m[91mnpm info install methods@1.1.2
+[0m[91mnpm info install fresh@0.5.2
+[0m[91mnpm info install etag@1.8.1
+[0m[91mnpm info postinstall utils-merge@1.0.1
+[0m[91mnpm info install vary@1.1.2
+[0m[91mnpm info install serve-static@1.14.1
+[0m[91mnpm info postinstall cookie-signature@1.0.6
+[0m[91mnpm info install cookie@0.4.0
+[0m[91mnpm info install range-parser@1.2.1
+[0m[91mnpm info install content-disposition@0.5.3
+[0m[91mnpm info install path-to-regexp@0.1.7
+[0m[91mnpm info install parseurl@1.3.3
+[0m[91mnpm info postinstall content-type@1.0.4
+[0m[91mnpm info postinstall merge-descriptors@1.0.1
+[0m[91mnpm info postinstall encodeurl@1.0.2
+[0m[91mnpm info postinstall methods@1.1.2
+[0m[91mnpm info postinstall fresh@0.5.2
+[0m[91mnpm info postinstall etag@1.8.1
+[0m[91mnpm info install safe-buffer@5.1.2
+[0m[91mnpm info postinstall vary@1.1.2
+[0m[91mnpm info postinstall serve-static@1.14.1
+[0m[91mnpm info postinstall cookie@0.4.0
+[0m[91mnpm info postinstall range-parser@1.2.1
+[0m[91mnpm info postinstall content-disposition@0.5.3
+[0m[91mnpm info postinstall path-to-regexp@0.1.7
+[0m[91mnpm info postinstall parseurl@1.3.3
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz
+[0m[91mnpm info postinstall safe-buffer@5.1.2
+[0m[91mnpm info preinstall body-parser@1.19.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/mime-types/-/mime-types-2.1.27.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz
+[0m[91mnpm info install setprototypeof@1.1.1
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/mime/-/mime-1.6.0.tgz
+[0m[91mnpm info postinstall setprototypeof@1.1.1
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz
+[0m[91mnpm info build /app/node_modules/express/node_modules/depd
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/mime/-/mime-1.6.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.27.tgz
+[0m[91mnpm info linkStuff depd@1.1.2
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91minstall[0m[91m depd@1.1.2
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91mpostinstall[0m[91m depd@1.1.2
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91mattempt[0m[91m registry request try #1 at 4:50:03 PM
+[0m[91mnpm[0m[91m [0m[91mhttp[0m[91m [0m[91mrequest[0m[91m GET https://registry.npmjs.org/iconv-lite
+[0m[91mnpm[0m[91m [0m[91minfo[0m[91m [0m[91mattempt[0m[91m registry request try #1 at 4:50:03 PM
+[0m[91mnpm[0m[91m [0m[91mhttp[0m[91m [0m[91mrequest[0m[91m GET https://registry.npmjs.org/raw-body
+[0m[91mnpm info install ee-first@1.1.1 into /app/node_modules/express/node_modules/on-finished
+[0m[91mnpm info installOne ee-first@1.1.1
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/bytes
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+npm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/http-errors/-/http-errors-1.7.2.tgz
+[0m[91mnpm info install ipaddr.js@1.9.1 into /app/node_modules/express/node_modules/proxy-addr
+npm info install forwarded@0.1.2 into /app/node_modules/express/node_modules/proxy-addr
+npm info installOne ipaddr.js@1.9.1
+[0m[91mnpm info installOne forwarded@0.1.2
+[0m[91mnpm http 200 https://registry.npmjs.org/iconv-lite
+[0m[91mnpm info install negotiator@0.6.2 into /app/node_modules/express/node_modules/accepts
+npm info install mime-types@2.1.27 into /app/node_modules/express/node_modules/accepts
+npm info installOne negotiator@0.6.2
+[0m[91mnpm info installOne mime-types@2.1.27
+[0m[91mnpm info install media-typer@0.3.0 into /app/node_modules/express/node_modules/type-is
+npm info install mime-types@2.1.27 into /app/node_modules/express/node_modules/type-is
+npm info installOne media-typer@0.3.0
+[0m[91mnpm info installOne mime-types@2.1.27
+[0m[91mnpm info install ms@2.1.1 into /app/node_modules/express/node_modules/send
+npm info install http-errors@1.7.3 into /app/node_modules/express/node_modules/send
+npm info install mime@1.6.0 into /app/node_modules/express/node_modules/send
+npm info install destroy@1.0.4 into /app/node_modules/express/node_modules/send
+[0m[91mnpm info installOne ms@2.1.1
+[0m[91mnpm info installOne http-errors@1.7.3
+[0m[91mnpm info installOne mime@1.6.0
+[0m[91mnpm info installOne destroy@1.0.4
+[0m[91mnpm info install unpipe@1.0.0 into /app/node_modules/express/node_modules/finalhandler
+[0m[91mnpm info installOne unpipe@1.0.0
+[0m[91mnpm http 200 https://registry.npmjs.org/bytes
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/http-errors/-/http-errors-1.7.2.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/raw-body
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+npm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+npm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/raw-body/-/raw-body-2.4.0.tgz
+[0m[91mnpm info preinstall debug@2.6.9
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/raw-body/-/raw-body-2.4.0.tgz
+[0m[91mnpm info preinstall qs@6.7.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/ms/-/ms-2.0.0.tgz
+[0m[91mnpm info install http-errors@1.7.2 into /app/node_modules/express/node_modules/body-parser
+npm info install bytes@3.1.0 into /app/node_modules/express/node_modules/body-parser
+npm info install raw-body@2.4.0 into /app/node_modules/express/node_modules/body-parser
+npm info install iconv-lite@0.4.24 into /app/node_modules/express/node_modules/body-parser
+[0m[91mnpm info installOne http-errors@1.7.2
+[0m[91mnpm info installOne bytes@3.1.0
+[0m[91mnpm info installOne raw-body@2.4.0
+[0m[91mnpm info installOne iconv-lite@0.4.24
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz
+[0m[91mnpm info preinstall ee-first@1.1.1
+[0m[91mnpm info build /app/node_modules/express/node_modules/qs
+[0m[91mnpm info preinstall ms@2.1.1
+[0m[91mnpm info preinstall destroy@1.0.4
+[0m[91mnpm info linkStuff qs@6.7.0
+[0m[91mnpm info preinstall forwarded@0.1.2
+[0m[91mnpm info preinstall media-typer@0.3.0
+[0m[91mnpm info preinstall mime-types@2.1.27
+[0m[91mnpm info preinstall mime-types@2.1.27
+[0m[91mnpm info preinstall unpipe@1.0.0
+[0m[91mnpm info install ms@2.0.0 into /app/node_modules/express/node_modules/debug
+npm info installOne ms@2.0.0
+[0m[91mnpm info preinstall http-errors@1.7.3
+[0m[91mnpm[0m[91m info install qs@6.7.0
+[0m[91mnpm info build /app/node_modules/express/node_modules/on-finished/node_modules/ee-first
+[0m[91mnpm info postinstall qs@6.7.0
+[0m[91mnpm info preinstall ipaddr.js@1.9.1
+[0m[91mnpm info linkStuff ee-first@1.1.1
+[0m[91mnpm info preinstall mocha@5.2.0
+[0m[91mnpm info build /app/node_modules/express/node_modules/send/node_modules/ms
+[0m[91mnpm info build /app/node_modules/express/node_modules/send/node_modules/destroy
+[0m[91mnpm info build /app/node_modules/express/node_modules/proxy-addr/node_modules/forwarded
+[0m[91mnpm info build /app/node_modules/express/node_modules/type-is/node_modules/media-typer
+[0m[91mnpm info install ee-first@1.1.1
+[0m[91mnpm info build /app/node_modules/express/node_modules/finalhandler/node_modules/unpipe
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/mime-db
+[0m[91mnpm info postinstall ee-first@1.1.1
+[0m[91mnpm info linkStuff ms@2.1.1
+[0m[91mnpm info linkStuff destroy@1.0.4
+[0m[91mnpm info build /app/node_modules/express/node_modules/on-finished
+[0m[91mnpm info linkStuff forwarded@0.1.2
+[0m[91mnpm info linkStuff media-typer@0.3.0
+[0m[91mnpm info build /app/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js
+[0m[91mnpm info linkStuff unpipe@1.0.0
+[0m[91mnpm info install ms@2.1.1
+[0m[91mnpm info install destroy@1.0.4
+[0m[91mnpm info preinstall negotiator@0.6.2
+[0m[91mnpm info postinstall ms@2.1.1
+[0m[91mnpm info postinstall destroy@1.0.4
+[0m[91mnpm info linkStuff on-finished@2.3.0
+[0m[91mnpm info install forwarded@0.1.2
+[0m[91mnpm info install media-typer@0.3.0
+[0m[91mnpm info postinstall forwarded@0.1.2
+[0m[91mnpm info install toidentifier@1.0.0 into /app/node_modules/express/node_modules/send/node_modules/http-errors
+[0m[91mnpm info installOne toidentifier@1.0.0
+[0m[91mnpm info postinstall media-typer@0.3.0
+[0m[91mnpm info install unpipe@1.0.0
+[0m[91mnpm info linkStuff ipaddr.js@1.9.1
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/diff
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/escape-string-regexp
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/glob
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/growl
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/he
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/minimatch
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/mkdirp
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/supports-color
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/browser-stdout
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/commander
+[0m[91mnpm info postinstall unpipe@1.0.0
+[0m[91mnpm info install on-finished@2.3.0
+[0m[91mnpm info preinstall mime@1.6.0
+[0m[91mnpm http 200 https://registry.npmjs.org/mime-db
+[0m[91mnpm info build /app/node_modules/express/node_modules/finalhandler
+[0m[91mnpm info postinstall on-finished@2.3.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/debug/-/debug-3.1.0.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/growl
+[0m[91mnpm info install ipaddr.js@1.9.1
+[0m[91mnpm http 200 https://registry.npmjs.org/escape-string-regexp
+[0m[91mnpm http 200 https://registry.npmjs.org/mkdirp
+[0m[91mnpm info postinstall ipaddr.js@1.9.1
+[0m[91mnpm http 200 https://registry.npmjs.org/diff
+[0m[91mnpm http 200 https://registry.npmjs.org/he
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/debug/-/debug-3.1.0.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/supports-color
+[0m[91mnpm http 200 https://registry.npmjs.org/minimatch
+[0m[91mnpm info preinstall http-errors@1.7.2
+[0m[91mnpm info preinstall bytes@3.1.0
+[0m[91mnpm info build /app/node_modules/express/node_modules/proxy-addr
+[0m[91mnpm http 200 https://registry.npmjs.org/browser-stdout
+[0m[91mnpm info linkStuff finalhandler@1.1.2
+[0m[91mnpm info build /app/node_modules/express/node_modules/accepts/node_modules/negotiator
+[0m[91mnpm http 200 https://registry.npmjs.org/glob
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/mime-db/-/mime-db-1.44.0.tgz
+[0m[91mnpm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/growl/-/growl-1.10.5.tgz
+[0m[91mnpm info preinstall raw-body@2.4.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz
+[0m[91mnpm info install finalhandler@1.1.2
+[0m[91mnpm info linkStuff proxy-addr@2.0.6
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/mime-db/-/mime-db-1.44.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/diff/-/diff-3.5.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/he/-/he-1.1.1.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/supports-color/-/supports-color-5.4.0.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz
+[0m[91mnpm info postinstall finalhandler@1.1.2
+[0m[91mnpm info linkStuff negotiator@0.6.2
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/growl/-/growl-1.10.5.tgz
+[0m[91mnpm info preinstall ms@2.0.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/browser-stdout/-/browser-stdout-1.3.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz
+[0m[91mnpm info preinstall mysql@2.18.1
+[0m[91mnpm info build /app/node_modules/express/node_modules/send/node_modules/mime
+[0m[91mnpm info retry fetch attempt 1 at 4:50:03 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:03 PM
+npm http fetch GET https://registry.npmjs.org/glob/-/glob-7.1.2.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/he/-/he-1.1.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz
+[0m[91mnpm info install proxy-addr@2.0.6
+[0m[91mnpm info postinstall proxy-addr@2.0.6
+[0m[91mnpm info install negotiator@0.6.2
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/browser-stdout/-/browser-stdout-1.3.1.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/diff/-/diff-3.5.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/supports-color/-/supports-color-5.4.0.tgz
+[0m[91mnpm info postinstall negotiator@0.6.2
+[0m[91mnpm info build /app/node_modules/express/node_modules/body-parser/node_modules/bytes
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/glob/-/glob-7.1.2.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/commander
+[0m[91mnpm info linkStuff mime@1.6.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+npm info attempt registry request try #1 at 4:50:04 PM
+npm http fetch GET https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz
+[0m[91mnpm info linkStuff bytes@3.1.0
+[0m[91mnpm info install mime-db@1.44.0 into /app/node_modules/express/node_modules/accepts/node_modules/mime-types
+[0m[91mnpm info installOne mime-db@1.44.0
+[0m[91mnpm info install mime-db@1.44.0 into /app/node_modules/express/node_modules/type-is/node_modules/mime-types
+npm info installOne mime-db@1.44.0
+[0m[91mnpm info build /app/node_modules/express/node_modules/debug/node_modules/ms
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/commander/-/commander-2.15.1.tgz
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/bignumber.js
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/readable-stream
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/sqlstring
+[0m[91mnpm info install mime@1.6.0
+[0m[91mnpm info install bytes@3.1.0
+[0m[91mnpm info postinstall mime@1.6.0
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/commander/-/commander-2.15.1.tgz
+[0m[91mnpm info postinstall bytes@3.1.0
+[0m[91mnpm info linkStuff ms@2.0.0
+[0m[91mnpm info install unpipe@1.0.0 into /app/node_modules/express/node_modules/body-parser/node_modules/raw-body
+npm info installOne unpipe@1.0.0
+[0m[91mnpm info preinstall toidentifier@1.0.0
+[0m[91mnpm http 200 https://registry.npmjs.org/bignumber.js
+[0m[91mnpm info install ms@2.0.0
+[0m[91mnpm http 200 https://registry.npmjs.org/sqlstring
+[0m[91mnpm info postinstall ms@2.0.0
+[0m[91mnpm info install toidentifier@1.0.0 into /app/node_modules/express/node_modules/body-parser/node_modules/http-errors
+npm info install inherits@2.0.3 into /app/node_modules/express/node_modules/body-parser/node_modules/http-errors
+npm info installOne toidentifier@1.0.0
+[0m[91mnpm info installOne inherits@2.0.3
+[0m[91mnpm info build /app/node_modules/express/node_modules/debug
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.0.tgz
+[0m[91mnpm info build /app/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/toidentifier
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+npm http fetch GET https://registry.npmjs.org/sqlstring/-/sqlstring-2.3.1.tgz
+[0m[91mnpm info install debug@3.1.0 into /app/node_modules/mocha
+npm info install growl@1.10.5 into /app/node_modules/mocha
+npm info install escape-string-regexp@1.0.5 into /app/node_modules/mocha
+npm info install mkdirp@0.5.1 into /app/node_modules/mocha
+npm info install minimatch@3.0.4 into /app/node_modules/mocha
+npm info install he@1.1.1 into /app/node_modules/mocha
+npm info install browser-stdout@1.3.1 into /app/node_modules/mocha
+[0m[91mnpm info install supports-color@5.4.0 into /app/node_modules/mocha
+npm info install glob@7.1.2 into /app/node_modules/mocha
+npm info install commander@2.15.1 into /app/node_modules/mocha
+npm info install diff@3.5.0 into /app/node_modules/mocha
+npm info installOne debug@3.1.0
+[0m[91mnpm info installOne growl@1.10.5
+[0m[91mnpm info installOne escape-string-regexp@1.0.5
+[0m[91mnpm info installOne mkdirp@0.5.1
+[0m[91mnpm info installOne minimatch@3.0.4
+[0m[91mnpm info installOne he@1.1.1
+[0m[91mnpm info installOne browser-stdout@1.3.1
+[0m[91mnpm info installOne supports-color@5.4.0
+[0m[91mnpm info installOne glob@7.1.2
+[0m[91mnpm info installOne commander@2.15.1
+[0m[91mnpm info installOne diff@3.5.0
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.0.tgz
+[0m[91mnpm info linkStuff debug@2.6.9
+[0m[91mnpm info linkStuff toidentifier@1.0.0
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/sqlstring/-/sqlstring-2.3.1.tgz
+[0m[91mnpm[0m[91m [0m[91minfo [0m[91minstall debug@2.6.9
+[0m[91mnpm [0m[91minfo install toidentifier@1.0.0
+[0m[91mnpm [0m[91minfo postinstall debug@2.6.9
+[0m[91mnpm [0m[91mhttp 200 https://registry.npmjs.org/readable-stream
+[0m[91mnpm [0m[91minfo postinstall toidentifier@1.0.0
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/send/node_modules/http-errors
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info[0m[91m attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http [0m[91mfetch GET https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz
+[0m[91mnpm info [0m[91mlinkStuff http-errors@1.7.3
+[0m[91mnpm info install http-errors@1.7.3
+[0m[91mnpm [0m[91minfo postinstall http-errors@1.7.3
+[0m[91mnpm [0m[91mhttp fetch 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz
+[0m[91mnpm info build[0m[91m /app/node_modules/express/node_modules/send
+[0m[91mnpm info linkStuff[0m[91m send@0.17.1
+[0m[91mnpm [0m[91minfo preinstall unpipe@1.0.0
+[0m[91mnpm [0m[91minfo preinstall toidentifier@1.0.0
+[0m[91mnpm [0m[91minfo install send@0.17.1
+[0m[91mnpm [0m[91minfo postinstall send@0.17.1
+[0m[91mnpm [0m[91minfo install safe-buffer@5.1.2 into /app/node_modules/mysql
+[0m[91mnpm info install[0m[91m sqlstring@2.3.1 into /app/node_modules/mysql
+npm info install[0m[91m bignumber.js@9.0.0 into /app/node_modules/mysql
+npm info [0m[91minstall readable-stream@2.3.7 into /app/node_modules/mysql
+npm [0m[91minfo installOne safe-buffer@5.1.2
+[0m[91mnpm info[0m[91m installOne sqlstring@2.3.1
+[0m[91mnpm [0m[91minfo installOne bignumber.js@9.0.0
+[0m[91mnpm info[0m[91m installOne readable-stream@2.3.7
+[0m[91mnpm info preinstall escape-string-regexp@1.0.5
+[0m[91mnpm [0m[91minfo preinstall browser-stdout@1.3.1
+[0m[91mnpm info[0m[91m preinstall inherits@2.0.3
+[0m[91mnpm [0m[91minfo preinstall minimatch@3.0.4
+[0m[91mnpm info[0m[91m build /app/node_modules/express/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe
+[0m[91mnpm [0m[91minfo preinstall mime-db@1.44.0
+[0m[91mnpm[0m[91m info preinstall mime-db@1.44.0
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/body-parser/node_modules/http-errors/node_modules/toidentifier
+[0m[91mnpm [0m[91minfo linkStuff unpipe@1.0.0
+[0m[91mnpm [0m[91minfo preinstall supports-color@5.4.0
+[0m[91mnpm [0m[91minfo linkStuff toidentifier@1.0.0
+[0m[91mnpm info install unpipe@1.0.0
+[0m[91mnpm [0m[91minfo install toidentifier@1.0.0
+[0m[91mnpm [0m[91minfo postinstall unpipe@1.0.0
+[0m[91mnpm info[0m[91m postinstall toidentifier@1.0.0
+[0m[91mnpm [0m[91minfo preinstall commander@2.15.1
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/body-parser/node_modules/raw-body
+[0m[91mnpm [0m[91minfo build /app/node_modules/mocha/node_modules/escape-string-regexp
+[0m[91mnpm info[0m[91m build /app/node_modules/mocha/node_modules/browser-stdout
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/body-parser/node_modules/http-errors/node_modules/inherits
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db
+[0m[91mnpm [0m[91minfo build /app/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+[0m[91mnpm [0m[91minfo attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm [0m[91mhttp request GET https://registry.npmjs.org/brace-expansion
+[0m[91mnpm [0m[91minfo preinstall glob@7.1.2
+[0m[91mnpm [0m[91minfo linkStuff raw-body@2.4.0
+[0m[91mnpm [0m[91minfo preinstall he@1.1.1
+[0m[91mnpm [0m[91minfo linkStuff escape-string-regexp@1.0.5
+[0m[91mnpm [0m[91minfo linkStuff browser-stdout@1.3.1
+[0m[91mnpm info [0m[91mlinkStuff inherits@2.0.3
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/has-flag
+[0m[91mnpm info linkStuff mime-db@1.44.0
+[0m[91mnpm info linkStuff mime-db@1.44.0
+[0m[91mnpm http 200 https://registry.npmjs.org/brace-expansion
+[0m[91mnpm info install raw-body@2.4.0
+[0m[91mnpm info install escape-string-regexp@1.0.5
+[0m[91mnpm info install browser-stdout@1.3.1
+[0m[91mnpm info install inherits@2.0.3
+[0m[91mnpm info postinstall raw-body@2.4.0
+[0m[91mnpm info postinstall escape-string-regexp@1.0.5
+[0m[91mnpm info postinstall browser-stdout@1.3.1
+[0m[91mnpm info postinstall inherits@2.0.3
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/commander
+[0m[91mnpm info install mime-db@1.44.0
+[0m[91mnpm info install mime-db@1.44.0
+[0m[91mnpm http 200 https://registry.npmjs.org/has-flag
+[0m[91mnpm info build /app/node_modules/express/node_modules/body-parser/node_modules/http-errors
+[0m[91mnpm info postinstall mime-db@1.44.0
+[0m[91mnpm info postinstall mime-db@1.44.0
+[0m[91mnpm info preinstall growl@1.10.5
+[0m[91mnpm info build /app/node_modules/express/node_modules/accepts/node_modules/mime-types
+[0m[91mnpm info build /app/node_modules/express/node_modules/type-is/node_modules/mime-types
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz
+[0m[91mnpm info linkStuff commander@2.15.1
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request[0m[91m GET https://registry.npmjs.org/once
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/path-is-absolute
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/fs.realpath
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/inflight
+[0m[91mnpm info [0m[91mlinkStuff[0m[91m http-errors@1.7.2
+[0m[91mnpm info build[0m[91m /app/node_modules/mocha/node_modules/he
+[0m[91mnpm info linkStuff mime-types@2.1.27
+[0m[91mnpm info linkStuff mime-types@2.1.27
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz
+[0m[91mnpm info install commander@2.15.1
+[0m[91mnpm http 200 https://registry.npmjs.org/path-is-absolute
+[0m[91mnpm info postinstall commander@2.15.1
+[0m[91mnpm info install http-errors@1.7.2
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/inflight
+[0m[91mnpm info postinstall http-errors@1.7.2
+[0m[91mnpm http 200[0m[91m https://registry.npmjs.org/once
+[0m[91mnpm info linkStuff he@1.1.1
+[0m[91mnpm info install[0m[91m mime-types@2.1.27
+[0m[91mnpm info install[0m[91m mime-types@2.1.27
+[0m[91mnpm http 200 https://registry.npmjs.org/fs.realpath
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz
+[0m[91mnpm info postinstall[0m[91m mime-types@2.1.27
+[0m[91mnpm info postinstall mime-types@2.1.27
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/growl
+[0m[91mnpm info build /app/node_modules/express/node_modules/accepts
+[0m[91mnpm info build /app/node_modules/express/node_modules/type-is
+[0m[91mnpm info [0m[91mpreinstall[0m[91m iconv-lite@0.4.24
+[0m[91mnpm info preinstall safe-buffer@5.1.2
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz
+[0m[91mnpm info linkStuff[0m[91m growl@1.10.5
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http[0m[91m fetch GET https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm[0m[91m http [0m[91mfetch GET https://registry.npmjs.org/once/-/once-1.4.0.tgz
+[0m[91mnpm info preinstall[0m[91m sqlstring@2.3.1
+[0m[91mnpm info install he@1.1.1
+[0m[91mnpm info linkStuff accepts@1.3.7
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
+[0m[91mnpm info linkStuff type-is@1.6.18
+[0m[91mnpm info postinstall he@1.1.1
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz
+[0m[91mnpm info build[0m[91m /app/node_modules/mysql/node_modules/safe-buffer
+[0m[91mnpm info install brace-expansion@1.1.11 into /app/node_modules/mocha/node_modules/minimatch
+[0m[91mnpm [0m[91minfo [0m[91minstallOne brace-expansion@1.1.11
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz
+[0m[91mnpm info install growl@1.10.5
+[0m[91mnpm info [0m[91mpostinstall[0m[91m growl@1.10.5
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
+[0m[91mnpm info install[0m[91m accepts@1.3.7
+[0m[91mnpm info install type-is@1.6.18
+[0m[91mnpm info install has-flag@3.0.0 into /app/node_modules/mocha/node_modules/supports-color
+[0m[91mnpm info installOne has-flag@3.0.0
+[0m[91mnpm info linkStuff safe-buffer@5.1.2
+[0m[91mnpm info postinstall accepts@1.3.7
+[0m[91mnpm info preinstall debug@3.1.0
+[0m[91mnpm info postinstall type-is@1.6.18
+[0m[91mnpm http [0m[91mfetch[0m[91m 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/safer-buffer
+[0m[91mnpm info install safe-buffer@5.1.2
+[0m[91mnpm info postinstall safe-buffer@5.1.2
+[0m[91mnpm info [0m[91mbuild[0m[91m /app/node_modules/mysql/node_modules/sqlstring
+[0m[91mnpm info linkStuff sqlstring@2.3.1
+[0m[91mnpm info install inflight@1.0.6 into /app/node_modules/mocha/node_modules/glob
+npm info install once@1.4.0 into /app/node_modules/mocha/node_modules/glob
+[0m[91mnpm info install fs.realpath@1.0.0 into /app/node_modules/mocha/node_modules/glob
+npm info[0m[91m install path-is-absolute@1.0.1 into /app/node_modules/mocha/node_modules/glob
+[0m[91mnpm info installOne inflight@1.0.6
+[0m[91mnpm info installOne once@1.4.0
+[0m[91mnpm info installOne fs.realpath@1.0.0
+[0m[91mnpm info installOne[0m[91m path-is-absolute@1.0.1
+[0m[91mnpm http 200 https://registry.npmjs.org/safer-buffer
+[0m[91mnpm info install sqlstring@2.3.1
+[0m[91mnpm info postinstall sqlstring@2.3.1
+[0m[91mnpm info install ms@2.0.0 into /app/node_modules/mocha/node_modules/debug
+[0m[91mnpm info installOne ms@2.0.0
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http [0m[91mfetch GET https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz
+[0m[91mnpm http [0m[91mfetch 200 https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz
+[0m[91mnpm info preinstall brace-expansion@1.1.11
+[0m[91mnpm info preinstall[0m[91m has-flag@3.0.0
+[0m[91mnpm info preinstall bignumber.js@9.0.0
+[0m[91mnpm info preinstall mkdirp@0.5.1
+[0m[91mnpm info install[0m[91m safer-buffer@2.1.2 into /app/node_modules/express/node_modules/body-parser/node_modules/iconv-lite
+npm info[0m[91m installOne safer-buffer@2.1.2
+[0m[91mnpm info build[0m[91m /app/node_modules/mocha/node_modules/supports-color/node_modules/has-flag
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/balanced-match
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/concat-map
+[0m[91mnpm info [0m[91mbuild[0m[91m /app/node_modules/mysql/node_modules/bignumber.js
+[0m[91mnpm [0m[91minfo preinstall[0m[91m once@1.4.0
+[0m[91mnpm info preinstall path-is-absolute@1.0.1
+[0m[91mnpm info preinstall inflight@1.0.6
+[0m[91mnpm info linkStuff[0m[91m has-flag@3.0.0
+[0m[91mnpm info linkStuff bignumber.js@9.0.0
+[0m[91mnpm http 200 https://registry.npmjs.org/concat-map
+[0m[91mnpm http 200 https://registry.npmjs.org/balanced-match
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/minimist
+[0m[91mnpm info preinstall[0m[91m fs.realpath@1.0.0
+[0m[91mnpm info install has-flag@3.0.0
+[0m[91mnpm info preinstall[0m[91m ms@2.0.0
+[0m[91mnpm info install bignumber.js@9.0.0
+[0m[91mnpm info postinstall has-flag@3.0.0
+[0m[91mnpm info postinstall[0m[91m bignumber.js@9.0.0
+[0m[91mnpm info [0m[91mbuild[0m[91m /app/node_modules/mocha/node_modules/supports-color
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz
+[0m[91mnpm http [0m[91m200[0m[91m https://registry.npmjs.org/minimist
+[0m[91mnpm info [0m[91mretry[0m[91m fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz
+[0m[91mnpm info [0m[91mbuild[0m[91m /app/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/wrappy
+[0m[91mnpm info linkStuff[0m[91m supports-color@5.4.0
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/debug/node_modules/ms
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz
+[0m[91mnpm [0m[91minfo build[0m[91m /app/node_modules/mocha/node_modules/glob/node_modules/fs.realpath
+[0m[91mnpm info linkStuff ms@2.0.0
+[0m[91mnpm info linkStuff[0m[91m path-is-absolute@1.0.1
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch[0m[91m GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+[0m[91mnpm info install[0m[91m supports-color@5.4.0
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz
+[0m[91mnpm info postinstall[0m[91m supports-color@5.4.0
+[0m[91mnpm http 200 https://registry.npmjs.org/wrappy
+[0m[91mnpm info install ms@2.0.0
+[0m[91mnpm info linkStuff fs.realpath@1.0.0
+[0m[91mnpm info install[0m[91m path-is-absolute@1.0.1
+[0m[91mnpm info postinstall[0m[91m ms@2.0.0
+[0m[91mnpm info postinstall path-is-absolute@1.0.1
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/debug
+[0m[91mnpm info install fs.realpath@1.0.0
+[0m[91mnpm info postinstall fs.realpath@1.0.0
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz
+[0m[91mnpm info [0m[91mlinkStuff debug@3.1.0
+[0m[91mnpm info install concat-map@0.0.1 into /app/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion
+[0m[91mnpm info install balanced-match@1.0.0 into /app/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion
+[0m[91mnpm info installOne concat-map@0.0.1
+[0m[91mnpm info installOne balanced-match@1.0.0
+[0m[91mnpm info [0m[91mpreinstall[0m[91m readable-stream@2.3.7
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+[0m[91mnpm info install[0m[91m debug@3.1.0
+[0m[91mnpm [0m[91minfo postinstall debug@3.1.0
+[0m[91mnpm http fetch[0m[91m 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/core-util-is
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/isarray
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/process-nextick-args
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request[0m[91m GET https://registry.npmjs.org/string_decoder
+[0m[91mnpm info attempt[0m[91m registry request try #1 at 4:50:04 PM
+[0m[91mnpm http request GET https://registry.npmjs.org/util-deprecate
+[0m[91mnpm info [0m[91mpreinstall diff@3.5.0
+[0m[91mnpm info preinstall safer-buffer@2.1.2
+[0m[91mnpm info install minimist@0.0.8 into /app/node_modules/mocha/node_modules/mkdirp
+[0m[91mnpm info installOne minimist@0.0.8
+[0m[91mnpm http [0m[91m200[0m[91m https://registry.npmjs.org/core-util-is
+[0m[91mnpm http 200 https://registry.npmjs.org/util-deprecate
+[0m[91mnpm info install[0m[91m wrappy@1.0.2 into /app/node_modules/mocha/node_modules/glob/node_modules/inflight
+npm info installOne wrappy@1.0.2
+[0m[91mnpm info install wrappy@1.0.2 into /app/node_modules/mocha/node_modules/glob/node_modules/once
+[0m[91mnpm info installOne wrappy@1.0.2
+[0m[91mnpm http 200 https://registry.npmjs.org/string_decoder
+[0m[91mnpm http 200 https://registry.npmjs.org/isarray
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/diff
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz
+[0m[91mnpm info build[0m[91m /app/node_modules/express/node_modules/body-parser/node_modules/iconv-lite/node_modules/safer-buffer
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz
+[0m[91mnpm http 200 https://registry.npmjs.org/process-nextick-args
+[0m[91mnpm info retry[0m[91m fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz
+[0m[91mnpm info linkStuff diff@3.5.0
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+[0m[91mnpm info linkStuff safer-buffer@2.1.2
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz
+[0m[91mnpm info retry fetch attempt 1 at 4:50:04 PM
+[0m[91mnpm info attempt registry request try #1 at 4:50:04 PM
+[0m[91mnpm http fetch GET https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz
+[0m[91mnpm info [0m[91minstall[0m[91m diff@3.5.0
+[0m[91mnpm http [0m[91mfetch 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz
+[0m[91mnpm info postinstall diff@3.5.0
+[0m[91mnpm info [0m[91minstall[0m[91m safer-buffer@2.1.2
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz
+[0m[91mnpm info postinstall safer-buffer@2.1.2
+[0m[91mnpm info build /app/node_modules/express/node_modules/body-parser/node_modules/iconv-lite
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+[0m[91mnpm http fetch 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz
+[0m[91mnpm info preinstall balanced-match@1.0.0
+[0m[91mnpm info linkStuff iconv-lite@0.4.24
+[0m[91mnpm info install iconv-lite@0.4.24
+[0m[91mnpm info postinstall iconv-lite@0.4.24
+[0m[91mnpm info build /app/node_modules/express/node_modules/body-parser
+[0m[91mnpm [0m[91minfo preinstall concat-map@0.0.1
+[0m[91mnpm info install[0m[91m util-deprecate@1.0.2 into /app/node_modules/mysql/node_modules/readable-stream
+npm info install core-util-is@1.0.2 into /app/node_modules/mysql/node_modules/readable-stream
+[0m[91mnpm info install[0m[91m string_decoder@1.1.1 into /app/node_modules/mysql/node_modules/readable-stream
+[0m[91mnpm info install isarray@1.0.0 into /app/node_modules/mysql/node_modules/readable-stream
+npm info install process-nextick-args@2.0.1 into /app/node_modules/mysql/node_modules/readable-stream
+[0m[91mnpm info installOne util-deprecate@1.0.2
+[0m[91mnpm info installOne core-util-is@1.0.2
+[0m[91mnpm info installOne[0m[91m string_decoder@1.1.1
+[0m[91mnpm info installOne isarray@1.0.0
+[0m[91mnpm info installOne process-nextick-args@2.0.1
+[0m[91mnpm info build[0m[91m /app/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+[0m[91mnpm info preinstall wrappy@1.0.2
+[0m[91mnpm info preinstall wrappy@1.0.2
+[0m[91mnpm info linkStuff body-parser@1.19.0
+[0m[91mnpm info linkStuff balanced-match@1.0.0
+[0m[91mnpm info install body-parser@1.19.0
+[0m[91mnpm info postinstall body-parser@1.19.0
+[0m[91mnpm info install balanced-match@1.0.0
+[0m[91mnpm info build /app/node_modules/express
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+[0m[91mnpm info postinstall balanced-match@1.0.0
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy
+[0m[91mnpm info [0m[91mbuild[0m[91m /app/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy
+[0m[91mnpm info linkStuff express@4.17.1
+[0m[91mnpm info [0m[91mlinkStuff[0m[91m concat-map@0.0.1
+[0m[91mnpm info linkStuff wrappy@1.0.2
+[0m[91mnpm info linkStuff wrappy@1.0.2
+[0m[91mnpm info install express@4.17.1
+[0m[91mnpm info install concat-map@0.0.1
+[0m[91mnpm info postinstall express@4.17.1
+[0m[91mnpm info postinstall concat-map@0.0.1
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion
+[0m[91mnpm info [0m[91minstall[0m[91m wrappy@1.0.2
+[0m[91mnpm info install wrappy@1.0.2
+[0m[91mnpm info postinstall[0m[91m wrappy@1.0.2
+[0m[91mnpm info postinstall[0m[91m wrappy@1.0.2
+[0m[91mnpm info build[0m[91m /app/node_modules/mocha/node_modules/glob/node_modules/once
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/glob/node_modules/inflight
+[0m[91mnpm info [0m[91mlinkStuff[0m[91m brace-expansion@1.1.11
+[0m[91mnpm info linkStuff[0m[91m once@1.4.0
+[0m[91mnpm info linkStuff inflight@1.0.6
+[0m[91mnpm info [0m[91minstall[0m[91m brace-expansion@1.1.11
+[0m[91mnpm info [0m[91mpostinstall[0m[91m brace-expansion@1.1.11
+[0m[91mnpm info [0m[91mpreinstall[0m[91m process-nextick-args@2.0.1
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/minimatch
+[0m[91mnpm info [0m[91minstall[0m[91m once@1.4.0
+[0m[91mnpm[0m[91m info install inflight@1.0.6
+[0m[91mnpm info postinstall once@1.4.0
+[0m[91mnpm info postinstall inflight@1.0.6
+[0m[91mnpm info build[0m[91m /app/node_modules/mocha/node_modules/glob
+[0m[91mnpm info linkStuff minimatch@3.0.4
+[0m[91mnpm info preinstall string_decoder@1.1.1
+[0m[91mnpm info preinstall util-deprecate@1.0.2
+[0m[91mnpm info preinstall[0m[91m minimist@0.0.8
+[0m[91mnpm info linkStuff[0m[91m glob@7.1.2
+[0m[91mnpm info [0m[91minstall[0m[91m minimatch@3.0.4
+[0m[91mnpm[0m[91m info preinstall core-util-is@1.0.2
+[0m[91mnpm info [0m[91mpostinstall[0m[91m minimatch@3.0.4
+[0m[91mnpm info build[0m[91m /app/node_modules/mysql/node_modules/readable-stream/node_modules/process-nextick-args
+[0m[91mnpm info install glob@7.1.2
+[0m[91mnpm info [0m[91mpostinstall glob@7.1.2
+[0m[91mnpm info preinstall isarray@1.0.0
+[0m[91mnpm info [0m[91mlinkStuff[0m[91m process-nextick-args@2.0.1
+[0m[91mnpm info build[0m[91m /app/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder
+[0m[91mnpm info build /app/node_modules/mysql/node_modules/readable-stream/node_modules/util-deprecate
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+[0m[91mnpm info install process-nextick-args@2.0.1
+[0m[91mnpm info build[0m[91m /app/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is
+[0m[91mnpm info [0m[91mpostinstall[0m[91m process-nextick-args@2.0.1
+[0m[91mnpm info linkStuff[0m[91m string_decoder@1.1.1
+[0m[91mnpm info linkStuff util-deprecate@1.0.2
+[0m[91mnpm[0m[91m info linkStuff minimist@0.0.8
+[0m[91mnpm info linkStuff[0m[91m core-util-is@1.0.2
+[0m[91mnpm info install string_decoder@1.1.1
+[0m[91mnpm info build /app/node_modules/mysql/node_modules/readable-stream/node_modules/isarray
+[0m[91mnpm info postinstall[0m[91m string_decoder@1.1.1
+[0m[91mnpm info install util-deprecate@1.0.2
+[0m[91mnpm info install[0m[91m minimist@0.0.8
+[0m[91mnpm info postinstall util-deprecate@1.0.2
+[0m[91mnpm info [0m[91minstall[0m[91m core-util-is@1.0.2
+[0m[91mnpm info postinstall minimist@0.0.8
+[0m[91mnpm info linkStuff[0m[91m isarray@1.0.0
+[0m[91mnpm info postinstall core-util-is@1.0.2
+[0m[91mnpm info build /app/node_modules/mocha/node_modules/mkdirp
+[0m[91mnpm info [0m[91minstall isarray@1.0.0
+[0m[91mnpm info postinstall isarray@1.0.0
+[0m[91mnpm info linkStuff[0m[91m mkdirp@0.5.1
+[0m[91mnpm [0m[91minfo build /app/node_modules/mysql/node_modules/readable-stream
+[0m[91mnpm info linkStuff[0m[91m readable-stream@2.3.7
+[0m[91mnpm[0m[91m [0m[91minfo install readable-stream@2.3.7
+[0m[91mnpm [0m[91minfo install[0m[91m mkdirp@0.5.1
+[0m[91mnpm info postinstall[0m[91m readable-stream@2.3.7
+[0m[91mnpm info postinstall mkdirp@0.5.1
+[0m[91mnpm info build /app/node_modules/mysql
+[0m[91mnpm info [0m[91mbuild[0m[91m /app/node_modules/mocha
+[0m[91mnpm info linkStuff mysql@2.18.1
+[0m[91mnpm info linkStuff[0m[91m mocha@5.2.0
+[0m[91mnpm info install mysql@2.18.1
+[0m[91mnpm info [0m[91mpostinstall[0m[91m mysql@2.18.1
+[0m[91mnpm info install mocha@5.2.0
+[0m[91mnpm info postinstall mocha@5.2.0
+[0m[91mnpm [0m[91minfo[0m[91m build /app
+[0m[91mnpm [0m[91minfo linkStuff myapp@0.0.1
+[0m[91mnpm info[0m[91m install[0m[91m myapp@0.0.1
+[0m[91mnpm [0m[91minfo [0m[91mpostinstall myapp@0.0.1
+[0m[91mnpm info [0m[91mprepublish myapp@0.0.1
+[0mms@2.1.2 node_modules/ms
+
+inherits@2.0.4 node_modules/inherits
+
+http-errors@1.8.0 node_modules/http-errors
+├── toidentifier@1.0.0
+├── setprototypeof@1.2.0
+├── statuses@1.5.0
+└── depd@1.1.2
+
+express@4.17.1 node_modules/express
+├── escape-html@1.0.3
+├── array-flatten@1.1.1
+├── statuses@1.5.0
+├── utils-merge@1.0.1
+├── cookie-signature@1.0.6
+├── content-type@1.0.4
+├── merge-descriptors@1.0.1
+├── encodeurl@1.0.2
+├── methods@1.1.2
+├── fresh@0.5.2
+├── etag@1.8.1
+├── vary@1.1.2
+├── serve-static@1.14.1
+├── cookie@0.4.0
+├── range-parser@1.2.1
+├── content-disposition@0.5.3
+├── path-to-regexp@0.1.7
+├── parseurl@1.3.3
+├── safe-buffer@5.1.2
+├── setprototypeof@1.1.1
+├── depd@1.1.2
+├── qs@6.7.0
+├── on-finished@2.3.0 (ee-first@1.1.1)
+├── finalhandler@1.1.2 (unpipe@1.0.0)
+├── proxy-addr@2.0.6 (forwarded@0.1.2, ipaddr.js@1.9.1)
+├── debug@2.6.9 (ms@2.0.0)
+├── send@0.17.1 (ms@2.1.1, destroy@1.0.4, mime@1.6.0, http-errors@1.7.3)
+├── accepts@1.3.7 (negotiator@0.6.2, mime-types@2.1.27)
+├── type-is@1.6.18 (media-typer@0.3.0, mime-types@2.1.27)
+└── body-parser@1.19.0 (bytes@3.1.0, raw-body@2.4.0, http-errors@1.7.2, iconv-lite@0.4.24)
+
+mysql@2.18.1 node_modules/mysql
+├── safe-buffer@5.1.2
+├── sqlstring@2.3.1
+├── bignumber.js@9.0.0
+└── readable-stream@2.3.7 (process-nextick-args@2.0.1, string_decoder@1.1.1, util-deprecate@1.0.2, core-util-is@1.0.2, isarray@1.0.0)
+
+mocha@5.2.0 node_modules/mocha
+├── escape-string-regexp@1.0.5
+├── browser-stdout@1.3.1
+├── commander@2.15.1
+├── he@1.1.1
+├── growl@1.10.5
+├── supports-color@5.4.0 (has-flag@3.0.0)
+├── debug@3.1.0 (ms@2.0.0)
+├── diff@3.5.0
+├── minimatch@3.0.4 (brace-expansion@1.1.11)
+├── glob@7.1.2 (path-is-absolute@1.0.1, fs.realpath@1.0.0, once@1.4.0, inflight@1.0.6)
+└── mkdirp@0.5.1 (minimist@0.0.8)
+[91mnpm[0m[91m info[0m[91m ok[0m[91m 
+[0mRemoving intermediate container 1e24ea76f297
+ ---> c169d4e573b4
+Step 5/6 : EXPOSE 3000
+ ---> Running in 66f5d3f0ef49
+Removing intermediate container 66f5d3f0ef49
+ ---> f07f1f14fa03
+Step 6/6 : CMD npm start
+ ---> Running in 34719bb48958
+Removing intermediate container 34719bb48958
+ ---> 0c2e12c7bdda
+Successfully built 0c2e12c7bdda
+Successfully tagged infovein69/docker-nodejs-demo:latest
+[nodejs-app] $ docker inspect 0c2e12c7bdda
+[nodejs-app] $ docker push infovein69/docker-nodejs-demo
+The push refers to repository [docker.io/infovein69/docker-nodejs-demo]
+000ad33e8ac3: Preparing
+159a52e568a2: Preparing
+deb23da5891f: Preparing
+e1da644611ce: Preparing
+d79093d63949: Preparing
+87cbe568afdd: Preparing
+787c930753b4: Preparing
+9f17712cba0b: Preparing
+223c0d04a137: Preparing
+fe4c16cbf7a4: Preparing
+87cbe568afdd: Waiting
+787c930753b4: Waiting
+9f17712cba0b: Waiting
+223c0d04a137: Waiting
+fe4c16cbf7a4: Waiting
+e1da644611ce: Layer already exists
+d79093d63949: Layer already exists
+87cbe568afdd: Layer already exists
+787c930753b4: Layer already exists
+9f17712cba0b: Layer already exists
+223c0d04a137: Layer already exists
+fe4c16cbf7a4: Layer already exists
+159a52e568a2: Pushed
+deb23da5891f: Pushed
+000ad33e8ac3: Pushed
+latest: digest: sha256:8b4bfc17b31eabe7e2edc08aeaf01cd21015be4971443a2c77df2a716e243e3e size: 2421
+Finished: SUCCESS

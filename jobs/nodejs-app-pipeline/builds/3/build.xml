@@ -1,0 +1,165 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.40">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.17">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.4.5">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.5.1">
+              <sha1>ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>3</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sreekanth-bg/docker-demo.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.4.5">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/nodejs-app-pipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.11">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/sreekanth-bg/docker-demo.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.86">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.docker.workflow.ImageAction plugin="docker-workflow@1.25">
+      <names class="sorted-set">
+        <string>node:4.6</string>
+      </names>
+    </org.jenkinsci.plugins.docker.workflow.ImageAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.3.14">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+  </actions>
+  <queueId>8</queueId>
+  <timestamp>1606756610761</timestamp>
+  <startTime>1606756610772</startTime>
+  <result>SUCCESS</result>
+  <duration>92808</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+   def commit_id
+   stage(&apos;Preparation&apos;) {
+     checkout scm
+     sh &quot;git rev-parse --short HEAD &gt; .git/commit-id&quot;
+     commit_id = readFile(&apos;.git/commit-id&apos;).trim()
+   }
+   stage(&apos;test&apos;) {
+     def myTestContainer = docker.image(&apos;node:4.6&apos;)
+     myTestContainer.pull()
+     myTestContainer.inside {
+       sh &apos;npm install --only=dev&apos;
+       sh &apos;npm test&apos;
+     }
+   }
+   stage(&apos;test with a DB&apos;) {
+     def mysql = docker.image(&apos;mysql&apos;).run(&quot;-e MYSQL_ALLOW_EMPTY_PASSWORD=yes&quot;) 
+     def myTestContainer = docker.image(&apos;node:4.6&apos;)
+     myTestContainer.pull()
+     myTestContainer.inside(&quot;--link ${mysql.id}:mysql&quot;) { // using linking, mysql will be available at host: mysql, port: 3306
+          sh &apos;npm install --only=dev&apos; 
+          sh &apos;npm test&apos;                     
+     }                                   
+     mysql.stop()
+   }                                     
+   stage(&apos;docker build/push&apos;) {            
+     docker.withRegistry(&apos;https://index.docker.io/v1/&apos;, &apos;dockerhub&apos;) {
+       def app = docker.build(&quot;infovein69/docker-nodejs-demo:${commit_id}&quot;, &apos;.&apos;).push()
+     }                                     
+   }                                       
+}                                          
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1517162355</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>7421762686</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>14619291938</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>927308390</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>842233265</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>64</iota>
+    <head>1:64</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.4.5">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/sreekanth-bg/docker-demo.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/nodejs-app-pipeline</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

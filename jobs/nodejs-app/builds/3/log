@@ -1,0 +1,72 @@
+Started by user [8mha:////4FBe+bRoZBGwJBbpyEH285QJlto1RiiY81dXiB+4eDejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/nodejs-app
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sreekanth-bg/docker-demo.git # timeout=10
+Fetching upstream changes from https://github.com/sreekanth-bg/docker-demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+ > git fetch --tags --progress -- https://github.com/sreekanth-bg/docker-demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+Commit message: "corrected image"
+ > git rev-list --no-walk ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+[nodejs-app] $ docker build -t infovein69/docker-nodejs-demo --pull=true /var/jenkins_home/workspace/nodejs-app
+Sending build context to Docker daemon  196.1kB
+Step 1/6 : FROM node:4.6
+4.6: Pulling from library/node
+Digest: sha256:a1cc6d576734c331643f9c4e0e7f572430e8baf9756dc24dab11d87b34bd202e
+Status: Image is up to date for node:4.6
+ ---> e834398209c1
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> f4cbcbe1b64c
+Step 3/6 : ADD . /app
+ ---> Using cache
+ ---> a828b79028c3
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> c169d4e573b4
+Step 5/6 : EXPOSE 3000
+ ---> Using cache
+ ---> f07f1f14fa03
+Step 6/6 : CMD npm start
+ ---> Using cache
+ ---> 0c2e12c7bdda
+Successfully built 0c2e12c7bdda
+Successfully tagged infovein69/docker-nodejs-demo:latest
+[nodejs-app] $ docker inspect 0c2e12c7bdda
+[nodejs-app] $ docker push infovein69/docker-nodejs-demo
+The push refers to repository [docker.io/infovein69/docker-nodejs-demo]
+000ad33e8ac3: Preparing
+159a52e568a2: Preparing
+deb23da5891f: Preparing
+e1da644611ce: Preparing
+d79093d63949: Preparing
+87cbe568afdd: Preparing
+787c930753b4: Preparing
+9f17712cba0b: Preparing
+223c0d04a137: Preparing
+fe4c16cbf7a4: Preparing
+87cbe568afdd: Waiting
+787c930753b4: Waiting
+9f17712cba0b: Waiting
+223c0d04a137: Waiting
+fe4c16cbf7a4: Waiting
+e1da644611ce: Layer already exists
+d79093d63949: Layer already exists
+159a52e568a2: Layer already exists
+000ad33e8ac3: Layer already exists
+deb23da5891f: Layer already exists
+787c930753b4: Layer already exists
+9f17712cba0b: Layer already exists
+87cbe568afdd: Layer already exists
+223c0d04a137: Layer already exists
+fe4c16cbf7a4: Layer already exists
+latest: digest: sha256:8b4bfc17b31eabe7e2edc08aeaf01cd21015be4971443a2c77df2a716e243e3e size: 2421
+Finished: SUCCESS

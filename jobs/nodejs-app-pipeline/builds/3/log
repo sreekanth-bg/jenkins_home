@@ -1,0 +1,1652 @@
+Started by user [8mha:////4FBe+bRoZBGwJBbpyEH285QJlto1RiiY81dXiB+4eDejAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained misc/Jenkinsfile.v2 from git https://github.com/sreekanth-bg/docker-demo.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4AYpdT3n00u4jS8GnFNeDAxPRNQ8JXuB4pep/IEERY29AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4JbEsabkl+aZvsFvQBMr2Rm6HzrvlCj44vBn5pkHcnffAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KPa+CCMDRpG6kallbuMoPC/Oznrn8ncN1cF4cHvda3ZAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/nodejs-app-pipeline
+[8mha:////4M+RIvnFtbbHHH+B+jxFT+dKZqEvx9nSJxznOoTVDCIsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4P4Sdo86gwxqepkkaF2Q2EV1TCjkFEv6arSNdzltv28ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4P7mwACPmogwwJiDstx8dQntfm4VZ+qi9JP/wEwt/bbNAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Preparation)
+[8mha:////4En5JENLW3+YH/PueLS5JViPOwj9aYy30g3o49Ge53YVAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sreekanth-bg/docker-demo.git # timeout=10
+Fetching upstream changes from https://github.com/sreekanth-bg/docker-demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+ > git fetch --tags --progress -- https://github.com/sreekanth-bg/docker-demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+Commit message: "corrected image"
+ > git rev-list --no-walk ebd26c72a2041fdb826b1bf86a0a92d9faebc7c5 # timeout=10
+[8mha:////4GmoyrqX2zpOQuiU2VpaN6LoMtD1Kj7rHgzRMN7VY9SVAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED8v8DEJvAAAAA==[0m[Pipeline] sh
++ git rev-parse --short HEAD
+[8mha:////4EoIwHN4etuciA1R6o5tYSU1o/qsJWe2kSkY7JcRjukAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED9uwSoQvAAAAA==[0m[Pipeline] readFile
+[8mha:////4I5IcyNg6JBTi1vFMIyEHRDNbB7MGpGes2ohoHytv0P1AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] }
+[8mha:////4EQE6gVmIHs/ckNDLmNMYigDuJbxk+Tt4nytiAfagYiBAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMhZVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AozIimL0AAAA=[0m[Pipeline] // stage
+[8mha:////4CCPIe+mi7bDd/GUDRtrMkFcaMgGEydG4ObDEHR+TgMqAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjEB2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2Gw/x/INvUXiHMEAAAA=[0m[Pipeline] stage
+[8mha:////4KsY4/qGxzoa2WCCQaZDvOQ5gKrJuu6JCkluH2t3Vl+CAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (test)
+[8mha:////4Opq8pun/En6+anq/0vgMkp9KB6ZeNBdzrowTigJUDGMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] isUnix
+[8mha:////4OA9gAojn5aQNVt2oGlmXgkazOz8zCl/eKYAh9lxw1g1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0uFte2+AAAA[0m[Pipeline] sh
++ docker pull node:4.6
+4.6: Pulling from library/node
+Digest: sha256:a1cc6d576734c331643f9c4e0e7f572430e8baf9756dc24dab11d87b34bd202e
+Status: Image is up to date for node:4.6
+[8mha:////4AVId07Tnm/MFKSk/XwNfyiTASk8To3IhMiw7UhHGLGUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGI1pjGvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4JYPfN2+7lRrqXXAsNoNCE3+Ke1SBn85gaoOJKWN3AK9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHJ54PfvgAAAA==[0m[Pipeline] sh
++ docker inspect -f . node:4.6
+.
+[8mha:////4JaaqXCQ5jZ+n+hYTEodQt8xyaI+ZhLXZxjbYSL/h9vLAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUiAUJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADIll1iwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container 176fd484fac1c10172c2492496c29e2ecbf9160c1a4fc1d9422bcd2b3dae3e83
+$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/nodejs-app-pipeline --volumes-from 176fd484fac1c10172c2492496c29e2ecbf9160c1a4fc1d9422bcd2b3dae3e83 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:4.6 cat
+$ docker top adbc9545a1cd584a61cb6559c2d0ed7d228cf1e70e480757af83cca635dc68c3 -eo pid,comm
+[8mha:////4BD5oOae7HyoXJnvuwq3fR2hSsk0zRjNAnOrxk+C5rtVAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4Bv6MXwkyIQq4rnYJ/JPRl09CkFmpYDvJ0Kp/DjWOy6sAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] sh
++ npm install --only=dev
+npm info it worked if it ends with ok
+npm info using npm@2.15.11
+npm info using node@v4.6.2
+npm info preinstall myapp@0.0.1
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/express
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/http-errors
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/mysql
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/inherits
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/mocha
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/ms
+npm http 200 https://registry.npmjs.org/http-errors
+npm http 200 https://registry.npmjs.org/inherits
+npm http 200 https://registry.npmjs.org/ms
+npm http 200 https://registry.npmjs.org/mysql
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/http-errors/-/http-errors-1.8.0.tgz
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/mysql/-/mysql-2.18.1.tgz
+npm http 200 https://registry.npmjs.org/express
+npm http fetch 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz
+npm http fetch 200 https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/mysql/-/mysql-2.18.1.tgz
+npm http fetch 200 https://registry.npmjs.org/http-errors/-/http-errors-1.8.0.tgz
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/express/-/express-4.17.1.tgz
+npm http fetch 200 https://registry.npmjs.org/express/-/express-4.17.1.tgz
+npm http 200 https://registry.npmjs.org/mocha
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/mocha/-/mocha-5.2.0.tgz
+npm http fetch 200 https://registry.npmjs.org/mocha/-/mocha-5.2.0.tgz
+npm info install inherits@2.0.4 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info install ms@2.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info install http-errors@1.8.0 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info install mysql@2.18.1 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info install express@4.17.1 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info install mocha@5.2.0 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info installOne inherits@2.0.4
+npm info installOne ms@2.1.2
+npm info installOne http-errors@1.8.0
+npm info installOne mysql@2.18.1
+npm info installOne express@4.17.1
+npm info installOne mocha@5.2.0
+npm info preinstall ms@2.1.2
+npm info preinstall inherits@2.0.4
+npm info preinstall http-errors@1.8.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/ms
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/inherits
+npm info linkStuff ms@2.1.2
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/toidentifier
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/depd
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/setprototypeof
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http request GET https://registry.npmjs.org/statuses
+npm info linkStuff inherits@2.0.4
+npm info install ms@2.1.2
+npm info postinstall ms@2.1.2
+npm http 200 https://registry.npmjs.org/toidentifier
+npm info install inherits@2.0.4
+npm http 200 https://registry.npmjs.org/setprototypeof
+npm info postinstall inherits@2.0.4
+npm http 200 https://registry.npmjs.org/statuses
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz
+npm http 200 https://registry.npmjs.org/depd
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz
+npm http fetch 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz
+npm info retry fetch attempt 1 at 5:17:01 PM
+npm info attempt registry request try #1 at 5:17:01 PM
+npm http fetch GET https://registry.npmjs.org/depd/-/depd-1.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz
+npm http fetch 200 https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz
+npm http fetch 200 https://registry.npmjs.org/depd/-/depd-1.1.2.tgz
+npm info preinstall express@4.17.1
+npm info install setprototypeof@1.2.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors
+npm info install toidentifier@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors
+npm info install statuses@1.5.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors
+npm info install depd@1.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors
+npm info installOne setprototypeof@1.2.0
+npm info installOne toidentifier@1.0.0
+npm info installOne statuses@1.5.0
+npm info installOne depd@1.1.2
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/body-parser
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/content-disposition
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/content-type
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/cookie
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/cookie-signature
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/debug
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/encodeurl
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/escape-html
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/etag
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/finalhandler
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/fresh
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/merge-descriptors
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/methods
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/on-finished
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/parseurl
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/path-to-regexp
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/proxy-addr
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/qs
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/range-parser
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/safe-buffer
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/send
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/serve-static
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/type-is
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/utils-merge
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/vary
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/accepts
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/array-flatten
+npm http 200 https://registry.npmjs.org/content-disposition
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.1.tgz
+npm http 200 https://registry.npmjs.org/cookie
+npm http 200 https://registry.npmjs.org/escape-html
+npm http 200 https://registry.npmjs.org/content-type
+npm http 200 https://registry.npmjs.org/methods
+npm http 200 https://registry.npmjs.org/etag
+npm http 200 https://registry.npmjs.org/range-parser
+npm http 200 https://registry.npmjs.org/on-finished
+npm http 200 https://registry.npmjs.org/merge-descriptors
+npm http 200 https://registry.npmjs.org/utils-merge
+npm http 200 https://registry.npmjs.org/cookie-signature
+npm http 200 https://registry.npmjs.org/array-flatten
+npm http 200 https://registry.npmjs.org/fresh
+npm http 200 https://registry.npmjs.org/body-parser
+npm http 200 https://registry.npmjs.org/finalhandler
+npm http 200 https://registry.npmjs.org/safe-buffer
+npm http 200 https://registry.npmjs.org/parseurl
+npm http 200 https://registry.npmjs.org/proxy-addr
+npm http 200 https://registry.npmjs.org/type-is
+npm http 200 https://registry.npmjs.org/send
+npm http 200 https://registry.npmjs.org/vary
+npm http 200 https://registry.npmjs.org/accepts
+npm http 200 https://registry.npmjs.org/serve-static
+npm http fetch 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.1.tgz
+npm http 200 https://registry.npmjs.org/debug
+npm http 200 https://registry.npmjs.org/path-to-regexp
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.3.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/cookie/-/cookie-0.4.0.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/methods/-/methods-1.1.2.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/etag/-/etag-1.8.1.tgz
+npm http 200 https://registry.npmjs.org/qs
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz
+npm http fetch 200 https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.3.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz
+npm http 200 https://registry.npmjs.org/encodeurl
+npm http fetch 200 https://registry.npmjs.org/cookie/-/cookie-0.4.0.tgz
+npm http fetch 200 https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz
+npm http fetch 200 https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz
+npm http fetch 200 https://registry.npmjs.org/methods/-/methods-1.1.2.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/etag/-/etag-1.8.1.tgz
+npm http fetch 200 https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.6.tgz
+npm http fetch 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz
+npm http fetch 200 https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz
+npm http fetch 200 https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz
+npm http fetch 200 https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/send/-/send-0.17.1.tgz
+npm http fetch 200 https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/serve-static/-/serve-static-1.14.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/vary/-/vary-1.1.2.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz
+npm http fetch 200 https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz
+npm http fetch 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/debug/-/debug-2.6.9.tgz
+npm http fetch 200 https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz
+npm http fetch 200 https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.6.tgz
+npm http fetch 200 https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz
+npm http fetch 200 https://registry.npmjs.org/send/-/send-0.17.1.tgz
+npm http fetch 200 https://registry.npmjs.org/serve-static/-/serve-static-1.14.1.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/qs/-/qs-6.7.0.tgz
+npm http fetch 200 https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz
+npm http fetch 200 https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz
+npm http fetch 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz
+npm http fetch 200 https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz
+npm info retry fetch attempt 1 at 5:17:02 PM
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http fetch GET https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz
+npm http fetch 200 https://registry.npmjs.org/vary/-/vary-1.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/qs/-/qs-6.7.0.tgz
+npm http fetch 200 https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz
+npm info preinstall toidentifier@1.0.0
+npm info preinstall setprototypeof@1.2.0
+npm info preinstall statuses@1.5.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors/node_modules/toidentifier
+npm info install depd@1.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install statuses@1.5.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install setprototypeof@1.1.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install content-disposition@0.5.3 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install methods@1.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install content-type@1.0.4 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install escape-html@1.0.3 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install cookie@0.4.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install etag@1.8.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install range-parser@1.2.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install utils-merge@1.0.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install on-finished@2.3.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install fresh@0.5.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install merge-descriptors@1.0.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install body-parser@1.19.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install safe-buffer@5.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install array-flatten@1.1.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install finalhandler@1.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install parseurl@1.3.3 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install proxy-addr@2.0.6 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install type-is@1.6.18 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install serve-static@1.14.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install accepts@1.3.7 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install path-to-regexp@0.1.7 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install debug@2.6.9 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install cookie-signature@1.0.6 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install vary@1.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install send@0.17.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install qs@6.7.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install encodeurl@1.0.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info installOne depd@1.1.2
+npm info installOne statuses@1.5.0
+npm info installOne setprototypeof@1.1.1
+npm info installOne content-disposition@0.5.3
+npm info installOne methods@1.1.2
+npm info installOne content-type@1.0.4
+npm info installOne escape-html@1.0.3
+npm info installOne cookie@0.4.0
+npm info installOne etag@1.8.1
+npm info installOne range-parser@1.2.1
+npm info installOne utils-merge@1.0.1
+npm info installOne on-finished@2.3.0
+npm info installOne fresh@0.5.2
+npm info installOne merge-descriptors@1.0.1
+npm info installOne body-parser@1.19.0
+npm info installOne safe-buffer@5.1.2
+npm info installOne array-flatten@1.1.1
+npm info installOne finalhandler@1.1.2
+npm info installOne parseurl@1.3.3
+npm info installOne proxy-addr@2.0.6
+npm info installOne type-is@1.6.18
+npm info installOne serve-static@1.14.1
+npm info installOne accepts@1.3.7
+npm info installOne path-to-regexp@0.1.7
+npm info installOne debug@2.6.9
+npm info installOne cookie-signature@1.0.6
+npm info installOne vary@1.1.2
+npm info installOne send@0.17.1
+npm info installOne qs@6.7.0
+npm info installOne encodeurl@1.0.2
+npm info linkStuff toidentifier@1.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors/node_modules/setprototypeof
+npm info install toidentifier@1.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors/node_modules/statuses
+npm info postinstall toidentifier@1.0.0
+npm info preinstall depd@1.1.2
+npm info linkStuff setprototypeof@1.2.0
+npm info linkStuff statuses@1.5.0
+npm info install setprototypeof@1.2.0
+npm info install statuses@1.5.0
+npm info postinstall setprototypeof@1.2.0
+npm info postinstall statuses@1.5.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors/node_modules/depd
+npm info linkStuff depd@1.1.2
+npm info install depd@1.1.2
+npm info postinstall depd@1.1.2
+npm info preinstall escape-html@1.0.3
+npm info preinstall array-flatten@1.1.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/http-errors
+npm info preinstall utils-merge@1.0.1
+npm info preinstall cookie-signature@1.0.6
+npm info preinstall methods@1.1.2
+npm info preinstall content-type@1.0.4
+npm info preinstall merge-descriptors@1.0.1
+npm info preinstall encodeurl@1.0.2
+npm info preinstall content-disposition@0.5.3
+npm info preinstall cookie@0.4.0
+npm info preinstall etag@1.8.1
+npm info preinstall range-parser@1.2.1
+npm info preinstall on-finished@2.3.0
+npm info preinstall fresh@0.5.2
+npm info preinstall finalhandler@1.1.2
+npm info preinstall parseurl@1.3.3
+npm info preinstall proxy-addr@2.0.6
+npm info preinstall type-is@1.6.18
+npm info preinstall serve-static@1.14.1
+npm info preinstall accepts@1.3.7
+npm info preinstall path-to-regexp@0.1.7
+npm info preinstall vary@1.1.2
+npm info preinstall safe-buffer@5.1.2
+npm info preinstall send@0.17.1
+npm info linkStuff http-errors@1.8.0
+npm info preinstall setprototypeof@1.1.1
+npm info preinstall statuses@1.5.0
+npm info install http-errors@1.8.0
+npm info postinstall http-errors@1.8.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/escape-html
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/array-flatten
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/utils-merge
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/cookie-signature
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/statuses
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/methods
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/content-type
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/merge-descriptors
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/encodeurl
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/content-disposition
+npm info linkStuff escape-html@1.0.3
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/cookie
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/etag
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/range-parser
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/fresh
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/parseurl
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/path-to-regexp
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/serve-static
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/vary
+npm info linkStuff array-flatten@1.1.1
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/ee-first
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/safe-buffer
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/forwarded
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/media-typer
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/mime-types
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/unpipe
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/ipaddr.js
+npm info attempt registry request try #1 at 5:17:02 PM
+npm http request GET https://registry.npmjs.org/negotiator
+npm info linkStuff statuses@1.5.0
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/destroy
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/mime
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/setprototypeof
+npm info linkStuff utils-merge@1.0.1
+npm http 200 https://registry.npmjs.org/ee-first
+npm info linkStuff cookie-signature@1.0.6
+npm info linkStuff methods@1.1.2
+npm info linkStuff content-type@1.0.4
+npm info install escape-html@1.0.3
+npm info linkStuff merge-descriptors@1.0.1
+npm http 200 https://registry.npmjs.org/forwarded
+npm info linkStuff encodeurl@1.0.2
+npm info linkStuff content-disposition@0.5.3
+npm info linkStuff cookie@0.4.0
+npm info linkStuff etag@1.8.1
+npm info linkStuff range-parser@1.2.1
+npm info linkStuff fresh@0.5.2
+npm info install array-flatten@1.1.1
+npm info linkStuff parseurl@1.3.3
+npm info linkStuff path-to-regexp@0.1.7
+npm info linkStuff serve-static@1.14.1
+npm info linkStuff vary@1.1.2
+npm info postinstall escape-html@1.0.3
+npm http 200 https://registry.npmjs.org/unpipe
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/http-errors/-/http-errors-1.7.3.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/ms/-/ms-2.1.1.tgz
+npm http 200 https://registry.npmjs.org/media-typer
+npm http 200 https://registry.npmjs.org/destroy
+npm info postinstall array-flatten@1.1.1
+npm info linkStuff safe-buffer@5.1.2
+npm info install statuses@1.5.0
+npm http 200 https://registry.npmjs.org/negotiator
+npm http 200 https://registry.npmjs.org/ipaddr.js
+npm info postinstall statuses@1.5.0
+npm http 200 https://registry.npmjs.org/mime
+npm info preinstall depd@1.1.2
+npm info install utils-merge@1.0.1
+npm http fetch 200 https://registry.npmjs.org/ms/-/ms-2.1.1.tgz
+npm info install cookie-signature@1.0.6
+npm info linkStuff setprototypeof@1.1.1
+npm info install methods@1.1.2
+npm info install content-type@1.0.4
+npm info install merge-descriptors@1.0.1
+npm http fetch 200 https://registry.npmjs.org/http-errors/-/http-errors-1.7.3.tgz
+npm info install encodeurl@1.0.2
+npm info install content-disposition@0.5.3
+npm info install cookie@0.4.0
+npm info install etag@1.8.1
+npm info install range-parser@1.2.1
+npm info postinstall utils-merge@1.0.1
+npm info install fresh@0.5.2
+npm info install parseurl@1.3.3
+npm info install path-to-regexp@0.1.7
+npm info install serve-static@1.14.1
+npm info postinstall cookie-signature@1.0.6
+npm info install vary@1.1.2
+npm info postinstall methods@1.1.2
+npm info postinstall content-type@1.0.4
+npm info postinstall merge-descriptors@1.0.1
+npm http 200 https://registry.npmjs.org/mime-types
+npm info postinstall encodeurl@1.0.2
+npm info postinstall content-disposition@0.5.3
+npm info postinstall cookie@0.4.0
+npm info postinstall etag@1.8.1
+npm info postinstall range-parser@1.2.1
+npm info postinstall fresh@0.5.2
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz
+npm info postinstall parseurl@1.3.3
+npm info postinstall path-to-regexp@0.1.7
+npm info postinstall serve-static@1.14.1
+npm info install safe-buffer@5.1.2
+npm info postinstall vary@1.1.2
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz
+npm info preinstall body-parser@1.19.0
+npm info postinstall safe-buffer@5.1.2
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz
+npm info install setprototypeof@1.1.1
+npm http fetch 200 https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz
+npm info postinstall setprototypeof@1.1.1
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/mime/-/mime-1.6.0.tgz
+npm http fetch 200 https://registry.npmjs.org/forwarded/-/forwarded-0.1.2.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/depd
+npm http fetch 200 https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz
+npm http fetch 200 https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz
+npm http fetch 200 https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz
+npm http fetch 200 https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz
+npm http fetch 200 https://registry.npmjs.org/mime/-/mime-1.6.0.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/mime-types/-/mime-types-2.1.27.tgz
+npm info linkStuff depd@1.1.2
+npm http fetch 200 https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz
+npm info install depd@1.1.2
+npm http fetch 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.27.tgz
+npm info postinstall depd@1.1.2
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/raw-body
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/bytes
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/iconv-lite
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/http-errors/-/http-errors-1.7.2.tgz
+npm info install ee-first@1.1.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/on-finished
+npm info installOne ee-first@1.1.1
+npm info install unpipe@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/finalhandler
+npm info installOne unpipe@1.0.0
+npm info install forwarded@0.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/proxy-addr
+npm info install ipaddr.js@1.9.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/proxy-addr
+npm info installOne forwarded@0.1.2
+npm info installOne ipaddr.js@1.9.1
+npm http 200 https://registry.npmjs.org/bytes
+npm info install ms@2.1.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send
+npm info install http-errors@1.7.3 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send
+npm info install destroy@1.0.4 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send
+npm info install mime@1.6.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send
+npm info installOne ms@2.1.1
+npm info installOne http-errors@1.7.3
+npm info installOne destroy@1.0.4
+npm info installOne mime@1.6.0
+npm http 200 https://registry.npmjs.org/raw-body
+npm http fetch 200 https://registry.npmjs.org/http-errors/-/http-errors-1.7.2.tgz
+npm http 200 https://registry.npmjs.org/iconv-lite
+npm info install negotiator@0.6.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts
+npm info install mime-types@2.1.27 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts
+npm info installOne negotiator@0.6.2
+npm info installOne mime-types@2.1.27
+npm info install media-typer@0.3.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is
+npm info install mime-types@2.1.27 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is
+npm info installOne media-typer@0.3.0
+npm info installOne mime-types@2.1.27
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/raw-body/-/raw-body-2.4.0.tgz
+npm info preinstall debug@2.6.9
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz
+npm http fetch 200 https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz
+npm http fetch 200 https://registry.npmjs.org/raw-body/-/raw-body-2.4.0.tgz
+npm http fetch 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz
+npm info preinstall qs@6.7.0
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/ms/-/ms-2.0.0.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/qs
+npm http fetch 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz
+npm info preinstall ee-first@1.1.1
+npm info linkStuff qs@6.7.0
+npm info preinstall ms@2.1.1
+npm info preinstall destroy@1.0.4
+npm info preinstall unpipe@1.0.0
+npm info preinstall forwarded@0.1.2
+npm info install qs@6.7.0
+npm info postinstall qs@6.7.0
+npm info preinstall http-errors@1.7.3
+npm info install http-errors@1.7.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser
+npm info install bytes@3.1.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser
+npm info install raw-body@2.4.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser
+npm info install iconv-lite@0.4.24 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser
+npm info installOne http-errors@1.7.2
+npm info installOne bytes@3.1.0
+npm info installOne raw-body@2.4.0
+npm info installOne iconv-lite@0.4.24
+npm info preinstall mocha@5.2.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/on-finished/node_modules/ee-first
+npm info preinstall ipaddr.js@1.9.1
+npm info install ms@2.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/debug
+npm info installOne ms@2.0.0
+npm info preinstall media-typer@0.3.0
+npm info preinstall mime-types@2.1.27
+npm info preinstall mime-types@2.1.27
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send/node_modules/ms
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send/node_modules/destroy
+npm info linkStuff ee-first@1.1.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/finalhandler/node_modules/unpipe
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/proxy-addr/node_modules/forwarded
+npm info linkStuff ms@2.1.1
+npm info linkStuff destroy@1.0.4
+npm info install ee-first@1.1.1
+npm info postinstall ee-first@1.1.1
+npm info linkStuff unpipe@1.0.0
+npm info linkStuff forwarded@0.1.2
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/browser-stdout
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/commander
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/diff
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/escape-string-regexp
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/glob
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/growl
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/he
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/minimatch
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/mkdirp
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/supports-color
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/on-finished
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js
+npm info install destroy@1.0.4
+npm info install ms@2.1.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is/node_modules/media-typer
+npm info postinstall destroy@1.0.4
+npm info postinstall ms@2.1.1
+npm http 200 https://registry.npmjs.org/browser-stdout
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/debug/-/debug-3.1.0.tgz
+npm http 200 https://registry.npmjs.org/escape-string-regexp
+npm info install unpipe@1.0.0
+npm info install forwarded@0.1.2
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/mime-db
+npm info postinstall unpipe@1.0.0
+npm info postinstall forwarded@0.1.2
+npm http 200 https://registry.npmjs.org/minimatch
+npm http 200 https://registry.npmjs.org/he
+npm http 200 https://registry.npmjs.org/supports-color
+npm http 200 https://registry.npmjs.org/mkdirp
+npm http 200 https://registry.npmjs.org/growl
+npm info install toidentifier@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send/node_modules/http-errors
+npm info installOne toidentifier@1.0.0
+npm info linkStuff on-finished@2.3.0
+npm info linkStuff ipaddr.js@1.9.1
+npm http 200 https://registry.npmjs.org/diff
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/finalhandler
+npm http fetch 200 https://registry.npmjs.org/debug/-/debug-3.1.0.tgz
+npm info linkStuff media-typer@0.3.0
+npm http 200 https://registry.npmjs.org/glob
+npm info preinstall mime@1.6.0
+npm info preinstall negotiator@0.6.2
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/browser-stdout/-/browser-stdout-1.3.1.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz
+npm info install on-finished@2.3.0
+npm info install ipaddr.js@1.9.1
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm info linkStuff finalhandler@1.1.2
+npm info postinstall on-finished@2.3.0
+npm info postinstall ipaddr.js@1.9.1
+npm http 200 https://registry.npmjs.org/mime-db
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/he/-/he-1.1.1.tgz
+npm info install media-typer@0.3.0
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/supports-color/-/supports-color-5.4.0.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/growl/-/growl-1.10.5.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/diff/-/diff-3.5.0.tgz
+npm info postinstall media-typer@0.3.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/proxy-addr
+npm http fetch 200 https://registry.npmjs.org/browser-stdout/-/browser-stdout-1.3.1.tgz
+npm http fetch 200 https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz
+npm http fetch 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/glob/-/glob-7.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/he/-/he-1.1.1.tgz
+npm http fetch 200 https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz
+npm info preinstall mysql@2.18.1
+npm info install finalhandler@1.1.2
+npm http fetch 200 https://registry.npmjs.org/supports-color/-/supports-color-5.4.0.tgz
+npm info postinstall finalhandler@1.1.2
+npm http fetch 200 https://registry.npmjs.org/diff/-/diff-3.5.0.tgz
+npm info linkStuff proxy-addr@2.0.6
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/mime-db/-/mime-db-1.44.0.tgz
+npm http 200 https://registry.npmjs.org/commander
+npm http fetch 200 https://registry.npmjs.org/growl/-/growl-1.10.5.tgz
+npm http fetch 200 https://registry.npmjs.org/glob/-/glob-7.1.2.tgz
+npm http fetch 200 https://registry.npmjs.org/mime-db/-/mime-db-1.44.0.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts/node_modules/negotiator
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send/node_modules/mime
+npm info install proxy-addr@2.0.6
+npm info postinstall proxy-addr@2.0.6
+npm info preinstall http-errors@1.7.2
+npm info preinstall bytes@3.1.0
+npm info preinstall ms@2.0.0
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/commander/-/commander-2.15.1.tgz
+npm info linkStuff negotiator@0.6.2
+npm info linkStuff mime@1.6.0
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/sqlstring
+npm info preinstall raw-body@2.4.0
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/bignumber.js
+npm http fetch 200 https://registry.npmjs.org/commander/-/commander-2.15.1.tgz
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http request GET https://registry.npmjs.org/readable-stream
+npm info install negotiator@0.6.2
+npm info postinstall negotiator@0.6.2
+npm info install mime@1.6.0
+npm info postinstall mime@1.6.0
+npm http 200 https://registry.npmjs.org/sqlstring
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/bytes
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/debug/node_modules/ms
+npm info install mime-db@1.44.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts/node_modules/mime-types
+npm info installOne mime-db@1.44.0
+npm info install mime-db@1.44.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is/node_modules/mime-types
+npm info installOne mime-db@1.44.0
+npm http 200 https://registry.npmjs.org/bignumber.js
+npm info preinstall toidentifier@1.0.0
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz
+npm info linkStuff bytes@3.1.0
+npm info linkStuff ms@2.0.0
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/sqlstring/-/sqlstring-2.3.1.tgz
+npm http 200 https://registry.npmjs.org/readable-stream
+npm http fetch 200 https://registry.npmjs.org/sqlstring/-/sqlstring-2.3.1.tgz
+npm info install debug@3.1.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install browser-stdout@1.3.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install escape-string-regexp@1.0.5 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install mkdirp@0.5.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install minimatch@3.0.4 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install he@1.1.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install supports-color@5.4.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install growl@1.10.5 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install glob@7.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install diff@3.5.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install commander@2.15.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info installOne debug@3.1.0
+npm info installOne browser-stdout@1.3.1
+npm info installOne escape-string-regexp@1.0.5
+npm info installOne mkdirp@0.5.1
+npm info installOne minimatch@3.0.4
+npm info installOne he@1.1.1
+npm info installOne supports-color@5.4.0
+npm info installOne growl@1.10.5
+npm info installOne glob@7.1.2
+npm info installOne diff@3.5.0
+npm info installOne commander@2.15.1
+npm http fetch 200 https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz
+npm info install bytes@3.1.0
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.0.tgz
+npm info install ms@2.0.0
+npm info postinstall bytes@3.1.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send/node_modules/http-errors/node_modules/toidentifier
+npm info postinstall ms@2.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/debug
+npm info retry fetch attempt 1 at 5:17:03 PM
+npm info attempt registry request try #1 at 5:17:03 PM
+npm http fetch GET https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz
+npm http fetch 200 https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.0.tgz
+npm info install unpipe@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/raw-body
+npm info installOne unpipe@1.0.0
+npm info linkStuff toidentifier@1.0.0
+npm info linkStuff debug@2.6.9
+npm info install toidentifier@1.0.0
+npm info postinstall toidentifier@1.0.0
+npm http fetch 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send/node_modules/http-errors
+npm info install toidentifier@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/http-errors
+npm info install inherits@2.0.3 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/http-errors
+npm info installOne toidentifier@1.0.0
+npm info installOne inherits@2.0.3
+npm info install debug@2.6.9
+npm info postinstall debug@2.6.9
+npm info linkStuff http-errors@1.7.3
+npm info install http-errors@1.7.3
+npm info postinstall http-errors@1.7.3
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/send
+npm info install safe-buffer@5.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql
+npm info install sqlstring@2.3.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql
+npm info install bignumber.js@9.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql
+npm info install readable-stream@2.3.7 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql
+npm info installOne safe-buffer@5.1.2
+npm info installOne sqlstring@2.3.1
+npm info installOne bignumber.js@9.0.0
+npm info installOne readable-stream@2.3.7
+npm info linkStuff send@0.17.1
+npm info install send@0.17.1
+npm info postinstall send@0.17.1
+npm info preinstall browser-stdout@1.3.1
+npm info preinstall escape-string-regexp@1.0.5
+npm info preinstall minimatch@3.0.4
+npm info preinstall supports-color@5.4.0
+npm info preinstall unpipe@1.0.0
+npm info preinstall commander@2.15.1
+npm info preinstall mime-db@1.44.0
+npm info preinstall mime-db@1.44.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/browser-stdout
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/escape-string-regexp
+npm info preinstall toidentifier@1.0.0
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/brace-expansion
+npm info preinstall glob@7.1.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/raw-body/node_modules/unpipe
+npm info preinstall he@1.1.1
+npm info linkStuff browser-stdout@1.3.1
+npm info linkStuff escape-string-regexp@1.0.5
+npm info preinstall inherits@2.0.3
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/has-flag
+npm info linkStuff unpipe@1.0.0
+npm http 200 https://registry.npmjs.org/brace-expansion
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/http-errors/node_modules/toidentifier
+npm info install browser-stdout@1.3.1
+npm info install escape-string-regexp@1.0.5
+npm info postinstall browser-stdout@1.3.1
+npm info postinstall escape-string-regexp@1.0.5
+npm info linkStuff toidentifier@1.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/commander
+npm info install unpipe@1.0.0
+npm http 200 https://registry.npmjs.org/has-flag
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+npm info postinstall unpipe@1.0.0
+npm info preinstall growl@1.10.5
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/raw-body
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz
+npm info install toidentifier@1.0.0
+npm info postinstall toidentifier@1.0.0
+npm info linkStuff commander@2.15.1
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/once
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/path-is-absolute
+npm info linkStuff mime-db@1.44.0
+npm info linkStuff mime-db@1.44.0
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/fs.realpath
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/inflight
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/http-errors/node_modules/inherits
+npm http fetch 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/he
+npm info linkStuff raw-body@2.4.0
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz
+npm info install commander@2.15.1
+npm http 200 https://registry.npmjs.org/once
+npm info preinstall safe-buffer@5.1.2
+npm info install mime-db@1.44.0
+npm info install mime-db@1.44.0
+npm http 200 https://registry.npmjs.org/inflight
+npm info postinstall commander@2.15.1
+npm info postinstall mime-db@1.44.0
+npm info postinstall mime-db@1.44.0
+npm info linkStuff inherits@2.0.3
+npm info linkStuff he@1.1.1
+npm info install raw-body@2.4.0
+npm http 200 https://registry.npmjs.org/fs.realpath
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts/node_modules/mime-types
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is/node_modules/mime-types
+npm info postinstall raw-body@2.4.0
+npm info preinstall sqlstring@2.3.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/growl
+npm http 200 https://registry.npmjs.org/path-is-absolute
+npm info install inherits@2.0.3
+npm info postinstall inherits@2.0.3
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/once/-/once-1.4.0.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/safe-buffer
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz
+npm info linkStuff mime-types@2.1.27
+npm info linkStuff mime-types@2.1.27
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/http-errors
+npm info linkStuff growl@1.10.5
+npm info install he@1.1.1
+npm info linkStuff safe-buffer@5.1.2
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
+npm info postinstall he@1.1.1
+npm http fetch 200 https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz
+npm http fetch 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz
+npm http fetch 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz
+npm info install mime-types@2.1.27
+npm info install mime-types@2.1.27
+npm info install brace-expansion@1.1.11 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch
+npm info installOne brace-expansion@1.1.11
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz
+npm info postinstall mime-types@2.1.27
+npm http fetch 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz
+npm info install growl@1.10.5
+npm info postinstall mime-types@2.1.27
+npm info linkStuff http-errors@1.7.2
+npm info install safe-buffer@5.1.2
+npm info postinstall growl@1.10.5
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/type-is
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/accepts
+npm info postinstall safe-buffer@5.1.2
+npm info preinstall debug@3.1.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/sqlstring
+npm info install http-errors@1.7.2
+npm http fetch 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz
+npm info postinstall http-errors@1.7.2
+npm info linkStuff type-is@1.6.18
+npm info linkStuff accepts@1.3.7
+npm info preinstall iconv-lite@0.4.24
+npm info linkStuff sqlstring@2.3.1
+npm info install type-is@1.6.18
+npm info install accepts@1.3.7
+npm info install sqlstring@2.3.1
+npm info postinstall type-is@1.6.18
+npm info postinstall accepts@1.3.7
+npm info install has-flag@3.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/supports-color
+npm info installOne has-flag@3.0.0
+npm info postinstall sqlstring@2.3.1
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/safer-buffer
+npm info install inflight@1.0.6 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob
+npm info install once@1.4.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob
+npm info install fs.realpath@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob
+npm info install path-is-absolute@1.0.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob
+npm info installOne inflight@1.0.6
+npm info installOne once@1.4.0
+npm info installOne fs.realpath@1.0.0
+npm info installOne path-is-absolute@1.0.1
+npm info install ms@2.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/debug
+npm info installOne ms@2.0.0
+npm info preinstall bignumber.js@9.0.0
+npm info preinstall brace-expansion@1.1.11
+npm info preinstall mkdirp@0.5.1
+npm http 200 https://registry.npmjs.org/safer-buffer
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/bignumber.js
+npm info preinstall has-flag@3.0.0
+npm info linkStuff bignumber.js@9.0.0
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/balanced-match
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/concat-map
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz
+npm info install bignumber.js@9.0.0
+npm info postinstall bignumber.js@9.0.0
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/minimist
+npm info preinstall inflight@1.0.6
+npm info preinstall once@1.4.0
+npm info preinstall path-is-absolute@1.0.1
+npm http fetch 200 https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz
+npm info preinstall ms@2.0.0
+npm http 200 https://registry.npmjs.org/balanced-match
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/supports-color/node_modules/has-flag
+npm http 200 https://registry.npmjs.org/concat-map
+npm info preinstall fs.realpath@1.0.0
+npm info linkStuff has-flag@3.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/debug/node_modules/ms
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz
+npm http 200 https://registry.npmjs.org/minimist
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz
+npm info linkStuff ms@2.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/path-is-absolute
+npm info install has-flag@3.0.0
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/wrappy
+npm info postinstall has-flag@3.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/supports-color
+npm info install ms@2.0.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/fs.realpath
+npm info install safer-buffer@2.1.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/iconv-lite
+npm info installOne safer-buffer@2.1.2
+npm info postinstall ms@2.0.0
+npm info linkStuff path-is-absolute@1.0.1
+npm http fetch 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+npm http fetch 200 https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/debug
+npm info preinstall readable-stream@2.3.7
+npm http 200 https://registry.npmjs.org/wrappy
+npm info linkStuff supports-color@5.4.0
+npm info linkStuff fs.realpath@1.0.0
+npm info install path-is-absolute@1.0.1
+npm info postinstall path-is-absolute@1.0.1
+npm info linkStuff debug@3.1.0
+npm info install supports-color@5.4.0
+npm info postinstall supports-color@5.4.0
+npm info install fs.realpath@1.0.0
+npm info postinstall fs.realpath@1.0.0
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/process-nextick-args
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/string_decoder
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/util-deprecate
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/core-util-is
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http request GET https://registry.npmjs.org/isarray
+npm http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+npm info install debug@3.1.0
+npm info postinstall debug@3.1.0
+npm info install balanced-match@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion
+npm info install concat-map@0.0.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion
+npm info installOne balanced-match@1.0.0
+npm info installOne concat-map@0.0.1
+npm info preinstall diff@3.5.0
+npm http 200 https://registry.npmjs.org/string_decoder
+npm http 200 https://registry.npmjs.org/util-deprecate
+npm http 200 https://registry.npmjs.org/process-nextick-args
+npm http 200 https://registry.npmjs.org/core-util-is
+npm http 200 https://registry.npmjs.org/isarray
+npm http fetch 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz
+npm info install minimist@0.0.8 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/mkdirp
+npm info installOne minimist@0.0.8
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/diff
+npm info retry fetch attempt 1 at 5:17:04 PM
+npm info attempt registry request try #1 at 5:17:04 PM
+npm http fetch GET https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+npm http fetch 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz
+npm info linkStuff diff@3.5.0
+npm http fetch 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz
+npm http fetch 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+npm http fetch 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz
+npm info install diff@3.5.0
+npm http fetch 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz
+npm info install wrappy@1.0.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/inflight
+npm info installOne wrappy@1.0.2
+npm info install wrappy@1.0.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/once
+npm info installOne wrappy@1.0.2
+npm info postinstall diff@3.5.0
+npm info preinstall safer-buffer@2.1.2
+npm info preinstall balanced-match@1.0.0
+npm info install string_decoder@1.1.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream
+npm info install process-nextick-args@2.0.1 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream
+npm info install isarray@1.0.0 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream
+npm info install core-util-is@1.0.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream
+npm info install util-deprecate@1.0.2 into /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream
+npm info installOne string_decoder@1.1.1
+npm info installOne process-nextick-args@2.0.1
+npm info installOne isarray@1.0.0
+npm info installOne core-util-is@1.0.2
+npm info installOne util-deprecate@1.0.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/iconv-lite/node_modules/safer-buffer
+npm info preinstall concat-map@0.0.1
+npm info linkStuff safer-buffer@2.1.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+npm info install safer-buffer@2.1.2
+npm info postinstall safer-buffer@2.1.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser/node_modules/iconv-lite
+npm info linkStuff balanced-match@1.0.0
+npm info preinstall wrappy@1.0.2
+npm info preinstall wrappy@1.0.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+npm info install balanced-match@1.0.0
+npm info linkStuff iconv-lite@0.4.24
+npm info postinstall balanced-match@1.0.0
+npm info linkStuff concat-map@0.0.1
+npm info install iconv-lite@0.4.24
+npm info postinstall iconv-lite@0.4.24
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express/node_modules/body-parser
+npm info install concat-map@0.0.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/once/node_modules/wrappy
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/inflight/node_modules/wrappy
+npm info postinstall concat-map@0.0.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch/node_modules/brace-expansion
+npm info linkStuff body-parser@1.19.0
+npm info preinstall process-nextick-args@2.0.1
+npm info linkStuff wrappy@1.0.2
+npm info linkStuff wrappy@1.0.2
+npm info install body-parser@1.19.0
+npm info linkStuff brace-expansion@1.1.11
+npm info postinstall body-parser@1.19.0
+npm info preinstall string_decoder@1.1.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/express
+npm info install wrappy@1.0.2
+npm info install wrappy@1.0.2
+npm info postinstall wrappy@1.0.2
+npm info postinstall wrappy@1.0.2
+npm info install brace-expansion@1.1.11
+npm info preinstall util-deprecate@1.0.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/inflight
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob/node_modules/once
+npm info postinstall brace-expansion@1.1.11
+npm info preinstall core-util-is@1.0.2
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/minimatch
+npm info linkStuff express@4.17.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream/node_modules/process-nextick-args
+npm info linkStuff once@1.4.0
+npm info linkStuff inflight@1.0.6
+npm info preinstall isarray@1.0.0
+npm info preinstall minimist@0.0.8
+npm info install express@4.17.1
+npm info linkStuff minimatch@3.0.4
+npm info postinstall express@4.17.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder
+npm info linkStuff process-nextick-args@2.0.1
+npm info install once@1.4.0
+npm info install inflight@1.0.6
+npm info postinstall once@1.4.0
+npm info postinstall inflight@1.0.6
+npm info install minimatch@3.0.4
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream/node_modules/util-deprecate
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/glob
+npm info postinstall minimatch@3.0.4
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is
+npm info linkStuff string_decoder@1.1.1
+npm info install process-nextick-args@2.0.1
+npm info postinstall process-nextick-args@2.0.1
+npm info linkStuff util-deprecate@1.0.2
+npm info linkStuff glob@7.1.2
+npm info linkStuff core-util-is@1.0.2
+npm info install string_decoder@1.1.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream/node_modules/isarray
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+npm info postinstall string_decoder@1.1.1
+npm info install util-deprecate@1.0.2
+npm info install glob@7.1.2
+npm info install core-util-is@1.0.2
+npm info postinstall util-deprecate@1.0.2
+npm info postinstall glob@7.1.2
+npm info postinstall core-util-is@1.0.2
+npm info linkStuff isarray@1.0.0
+npm info linkStuff minimist@0.0.8
+npm info install isarray@1.0.0
+npm info install minimist@0.0.8
+npm info postinstall isarray@1.0.0
+npm info postinstall minimist@0.0.8
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql/node_modules/readable-stream
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha/node_modules/mkdirp
+npm info linkStuff readable-stream@2.3.7
+npm info linkStuff mkdirp@0.5.1
+npm info install readable-stream@2.3.7
+npm info postinstall readable-stream@2.3.7
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mysql
+npm info install mkdirp@0.5.1
+npm info postinstall mkdirp@0.5.1
+npm info linkStuff mysql@2.18.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/mocha
+npm info install mysql@2.18.1
+npm info postinstall mysql@2.18.1
+npm info linkStuff mocha@5.2.0
+npm info install mocha@5.2.0
+npm info postinstall mocha@5.2.0
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info linkStuff myapp@0.0.1
+npm info install myapp@0.0.1
+npm info postinstall myapp@0.0.1
+npm info prepublish myapp@0.0.1
+ms@2.1.2 node_modules/ms
+
+inherits@2.0.4 node_modules/inherits
+
+http-errors@1.8.0 node_modules/http-errors
+├── toidentifier@1.0.0
+├── setprototypeof@1.2.0
+├── statuses@1.5.0
+└── depd@1.1.2
+
+express@4.17.1 node_modules/express
+├── escape-html@1.0.3
+├── array-flatten@1.1.1
+├── statuses@1.5.0
+├── utils-merge@1.0.1
+├── cookie-signature@1.0.6
+├── methods@1.1.2
+├── content-type@1.0.4
+├── merge-descriptors@1.0.1
+├── encodeurl@1.0.2
+├── content-disposition@0.5.3
+├── cookie@0.4.0
+├── etag@1.8.1
+├── range-parser@1.2.1
+├── fresh@0.5.2
+├── parseurl@1.3.3
+├── path-to-regexp@0.1.7
+├── serve-static@1.14.1
+├── vary@1.1.2
+├── safe-buffer@5.1.2
+├── setprototypeof@1.1.1
+├── depd@1.1.2
+├── qs@6.7.0
+├── on-finished@2.3.0 (ee-first@1.1.1)
+├── finalhandler@1.1.2 (unpipe@1.0.0)
+├── proxy-addr@2.0.6 (forwarded@0.1.2, ipaddr.js@1.9.1)
+├── debug@2.6.9 (ms@2.0.0)
+├── send@0.17.1 (destroy@1.0.4, ms@2.1.1, mime@1.6.0, http-errors@1.7.3)
+├── type-is@1.6.18 (media-typer@0.3.0, mime-types@2.1.27)
+├── accepts@1.3.7 (negotiator@0.6.2, mime-types@2.1.27)
+└── body-parser@1.19.0 (bytes@3.1.0, raw-body@2.4.0, http-errors@1.7.2, iconv-lite@0.4.24)
+
+mysql@2.18.1 node_modules/mysql
+├── safe-buffer@5.1.2
+├── sqlstring@2.3.1
+├── bignumber.js@9.0.0
+└── readable-stream@2.3.7 (process-nextick-args@2.0.1, string_decoder@1.1.1, util-deprecate@1.0.2, core-util-is@1.0.2, isarray@1.0.0)
+
+mocha@5.2.0 node_modules/mocha
+├── browser-stdout@1.3.1
+├── escape-string-regexp@1.0.5
+├── commander@2.15.1
+├── he@1.1.1
+├── growl@1.10.5
+├── supports-color@5.4.0 (has-flag@3.0.0)
+├── debug@3.1.0 (ms@2.0.0)
+├── diff@3.5.0
+├── minimatch@3.0.4 (brace-expansion@1.1.11)
+├── glob@7.1.2 (path-is-absolute@1.0.1, fs.realpath@1.0.0, once@1.4.0, inflight@1.0.6)
+└── mkdirp@0.5.1 (minimist@0.0.8)
+npm info ok 
+[8mha:////4AjYGfIyKvi81Wzdu8s4ydXgaXD3HBnxs/v0xHra9PG8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] sh
++ npm test
+npm info it worked if it ends with ok
+npm info using npm@2.15.11
+npm info using node@v4.6.2
+npm info pretest myapp@0.0.1
+npm info test myapp@0.0.1
+
+> myapp@0.0.1 test /var/jenkins_home/workspace/nodejs-app-pipeline
+> npm install inherits && mocha
+
+npm info it worked if it ends with ok
+npm info using npm@2.15.11
+npm info using node@v4.6.2
+npm info addNameTag [ 'inherits', 'latest' ]
+npm info install inherits@2.0.4 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info installOne inherits@2.0.4
+npm info preuninstall inherits@2.0.4
+npm info uninstall inherits@2.0.4
+npm info postuninstall inherits@2.0.4
+npm info preinstall inherits@2.0.4
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/inherits
+npm info linkStuff inherits@2.0.4
+npm info install inherits@2.0.4
+npm info postinstall inherits@2.0.4
+inherits@2.0.4 node_modules/inherits
+npm info ok 
+
+
+  Array
+    #indexOf()
+      ✓ should return -1 when the value is not present
+
+
+  1 passing (8ms)
+
+npm info posttest myapp@0.0.1
+npm info ok 
+[8mha:////4F2TRowQ5C5U9OhMo2Yy3mqDkC1M2I8m/GtjJLInLIihAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+$ docker stop --time=1 adbc9545a1cd584a61cb6559c2d0ed7d228cf1e70e480757af83cca635dc68c3
+$ docker rm -f adbc9545a1cd584a61cb6559c2d0ed7d228cf1e70e480757af83cca635dc68c3
+[8mha:////4G0tDn83lzV6djzlntfc6TYRLIpJDFqZ45BInYc/ZqEyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4CBp2hloiFXLQAJv/kgngUPKjNFkJoPp184gZxCLKlOrAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIjPh1KRWu54QQmMcaJtRtsB6fiRFyNO2ARiYopRvOmea83LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdIdd2/wGIrpolvgAAAA==[0m[Pipeline] }
+[8mha:////4HJDk+XucAqBobFsyvCFoQbWsLMYWGNGDYFOOWfZDEraAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRkagQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QG7TcGZvgAAAA==[0m[Pipeline] // stage
+[8mha:////4GPbgyBGxyho4l1K2jiY1xqtDvXTz86rZNLrNR0oUm9OAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIUSDqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8AzYdm7bBAAAA[0m[Pipeline] stage
+[8mha:////4CM0iDdueGNSQrARXQsoNjEAoeWw5oPZlGrnmHt+YR4KAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (test with a DB)
+[8mha:////4E4sHW2GqqdG4sZDFxwTBmpjSwRTTnC+1lGzKtJyfaL8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGvZp0gvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4CfzCbVhyWxzlfweDlWSZy19wBOn7xbIkQvDWCfNhqZxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0SCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHuV4Y5vgAAAA==[0m[Pipeline] sh
++ docker run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=yes mysql
+Unable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+852e50cd189d: Pulling fs layer
+29969ddb0ffb: Pulling fs layer
+a43f41a44c48: Pulling fs layer
+5cdd802543a3: Pulling fs layer
+b79b040de953: Pulling fs layer
+938c64119969: Pulling fs layer
+7689ec51a0d9: Pulling fs layer
+a880ba7c411f: Pulling fs layer
+984f656ec6ca: Pulling fs layer
+9f497bce458a: Pulling fs layer
+b9940f97694b: Pulling fs layer
+2f069358dc96: Pulling fs layer
+7689ec51a0d9: Waiting
+a880ba7c411f: Waiting
+984f656ec6ca: Waiting
+9f497bce458a: Waiting
+b9940f97694b: Waiting
+2f069358dc96: Waiting
+5cdd802543a3: Waiting
+b79b040de953: Waiting
+938c64119969: Waiting
+29969ddb0ffb: Verifying Checksum
+29969ddb0ffb: Download complete
+a43f41a44c48: Verifying Checksum
+a43f41a44c48: Download complete
+5cdd802543a3: Verifying Checksum
+5cdd802543a3: Download complete
+b79b040de953: Verifying Checksum
+b79b040de953: Download complete
+7689ec51a0d9: Verifying Checksum
+7689ec51a0d9: Download complete
+938c64119969: Verifying Checksum
+938c64119969: Download complete
+852e50cd189d: Verifying Checksum
+852e50cd189d: Download complete
+a880ba7c411f: Verifying Checksum
+a880ba7c411f: Download complete
+9f497bce458a: Verifying Checksum
+9f497bce458a: Download complete
+b9940f97694b: Verifying Checksum
+b9940f97694b: Download complete
+2f069358dc96: Verifying Checksum
+2f069358dc96: Download complete
+984f656ec6ca: Verifying Checksum
+984f656ec6ca: Download complete
+852e50cd189d: Pull complete
+29969ddb0ffb: Pull complete
+a43f41a44c48: Pull complete
+5cdd802543a3: Pull complete
+b79b040de953: Pull complete
+938c64119969: Pull complete
+7689ec51a0d9: Pull complete
+a880ba7c411f: Pull complete
+984f656ec6ca: Pull complete
+9f497bce458a: Pull complete
+b9940f97694b: Pull complete
+2f069358dc96: Pull complete
+Digest: sha256:4bb2e81a40e9d0d59bd8e3dc2ba5e1f2197696f6de39a91e90798dd27299b093
+Status: Downloaded newer image for mysql:latest
+[8mha:////4D5hr1jc7oC+ZP34um99wQKveRd+1TEOJ8wL2+Hy5IaQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+QhobpvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4IbFU5rK+f7es8Gkb0aytvtmrz7FRa9HhmyKVAADLZkPAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/Rt53wvgAAAA==[0m[Pipeline] sh
++ docker pull node:4.6
+4.6: Pulling from library/node
+Digest: sha256:a1cc6d576734c331643f9c4e0e7f572430e8baf9756dc24dab11d87b34bd202e
+Status: Image is up to date for node:4.6
+[8mha:////4Gz4Y8IiikxY4epxS9h9bVYtWd3uhn4gaGbGuLXdGzOfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihYICUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2Ccr6kGtf+w8S5LDbvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4L62jRYdxkJUgKJOBPenJADl5yg4OC+3aWRQ0BFY/vd1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2Ccr9IVdd+w9T1avCvgAAAA==[0m[Pipeline] sh
++ docker inspect -f . node:4.6
+.
+[8mha:////4INEqFA/ZZvgcUSkEU1GdL//MI9mqPgFcfHzQmMbqK4PAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAiQG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzT7bdvd5Vm/o5kdFwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container 176fd484fac1c10172c2492496c29e2ecbf9160c1a4fc1d9422bcd2b3dae3e83
+$ docker run -t -d -u 1000:1000 --link 4ec3eb58934c22d026213c0d009b1ee2e718553772e372391fc38e1e58f50ffa:mysql -w /var/jenkins_home/workspace/nodejs-app-pipeline --volumes-from 176fd484fac1c10172c2492496c29e2ecbf9160c1a4fc1d9422bcd2b3dae3e83 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** node:4.6 cat
+$ docker top 5aca863459baba2d51b39677f1e283bf84fb6ae427f4686f7fe02e2fc18e00d9 -eo pid,comm
+[8mha:////4IWgm0TytM2BN0K64wWQnKuhOiCHp8HzQCzZzfJR50SeAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] {
+[8mha:////4PHsv/C/SFShrLqPZZw97VCVQxMZ5xPNtzGEwzWz9z77AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN6Ew6eS+AAAA[0m[Pipeline] sh
++ npm install --only=dev
+npm info it worked if it ends with ok
+npm info using npm@2.15.11
+npm info using node@v4.6.2
+npm info preinstall myapp@0.0.1
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info linkStuff myapp@0.0.1
+npm info install myapp@0.0.1
+npm info postinstall myapp@0.0.1
+npm info prepublish myapp@0.0.1
+npm info ok 
+[8mha:////4L5ZB91hX66eOirh0p3VPYg1C3RR7Oh1x7fYyw3TDZ+HAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHgAfL9vgAAAA==[0m[Pipeline] sh
++ npm test
+npm info it worked if it ends with ok
+npm info using npm@2.15.11
+npm info using node@v4.6.2
+npm info pretest myapp@0.0.1
+npm info test myapp@0.0.1
+
+> myapp@0.0.1 test /var/jenkins_home/workspace/nodejs-app-pipeline
+> npm install inherits && mocha
+
+npm info it worked if it ends with ok
+npm info using npm@2.15.11
+npm info using node@v4.6.2
+npm info addNameTag [ 'inherits', 'latest' ]
+npm info attempt registry request try #1 at 5:17:50 PM
+npm http request GET https://registry.npmjs.org/inherits
+npm http 200 https://registry.npmjs.org/inherits
+npm info retry fetch attempt 1 at 5:17:50 PM
+npm info attempt registry request try #1 at 5:17:50 PM
+npm http fetch GET https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz
+npm http fetch 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz
+npm info install inherits@2.0.4 into /var/jenkins_home/workspace/nodejs-app-pipeline
+npm info installOne inherits@2.0.4
+npm info preuninstall inherits@2.0.4
+npm info uninstall inherits@2.0.4
+npm info postuninstall inherits@2.0.4
+npm info preinstall inherits@2.0.4
+npm info build /var/jenkins_home/workspace/nodejs-app-pipeline/node_modules/inherits
+npm info linkStuff inherits@2.0.4
+npm info install inherits@2.0.4
+npm info postinstall inherits@2.0.4
+inherits@2.0.4 node_modules/inherits
+npm info ok 
+
+
+  Array
+    #indexOf()
+      ✓ should return -1 when the value is not present
+
+
+  1 passing (9ms)
+
+npm info posttest myapp@0.0.1
+npm info ok 
+[8mha:////4PO1OVOrfvIwMeT5+YDp4LgF1pavEoUkuh+pWuxaU4N3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3wonovvgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 5aca863459baba2d51b39677f1e283bf84fb6ae427f4686f7fe02e2fc18e00d9
+$ docker rm -f 5aca863459baba2d51b39677f1e283bf84fb6ae427f4686f7fe02e2fc18e00d9
+[8mha:////4GfdTev+cX1p+bvJJqh0LUPd+/qnL22HgPMTjmMxx0JYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIMQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N8NBIZO+AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4He6QXapkse6eUZpYbHlGP8Y0s60XcQZl8KBRv8gH5YKAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAFZDJ7L4AAAA=[0m[Pipeline] isUnix
+[8mha:////4IvY9amezgAUX+kq7OBQUYBoTVhcPLDQGUgoUT5EBL19AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAVKHS9b4AAAA=[0m[Pipeline] sh
++ docker stop 4ec3eb58934c22d026213c0d009b1ee2e718553772e372391fc38e1e58f50ffa
+4ec3eb58934c22d026213c0d009b1ee2e718553772e372391fc38e1e58f50ffa
++ docker rm -f 4ec3eb58934c22d026213c0d009b1ee2e718553772e372391fc38e1e58f50ffa
+4ec3eb58934c22d026213c0d009b1ee2e718553772e372391fc38e1e58f50ffa
+[8mha:////4PBsjApIyMV+/oTOT1RKiuEf5ofFuwq19JegyRGeZJsLAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRUgUiCqtlYYXmNgYJ9adsR2SihfxNf6ARSQqtljtbDOvN6xjgBMHg72mwVLsLHo3mrxw4jBcHU/Y8wU7pshOY6unlpVuFmw5aVhSlLASsNHUOY6WTIKt6OVDVk6Sqc4p5O8ooLTqDk8oRDYnGdIX5gC726gi08/zVwCz9wnKfZ2rPnwAde9TvL4AAAA=[0m[Pipeline] }
+[8mha:////4JI/BztLNiNJknuvHrCM0TQQaQiilJeJYliD5ORasKd1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDud7m2hw9GDAgAvgAAAA==[0m[Pipeline] // stage
+[8mha:////4P+mxCcuTsXrT7p7Z1BHMU2PI73ECYRoBD6KW1f9as3+AAAApR+LCAAAAAAAAP9tjTEOgkAURAcMha2lh1gaOmNlu6HxBCus6+Lmf9z9CJUn8mreQZTEyqnmTTJ5zxeKFLHn6FRn6eopNV71YXBzUyPH6znwqDo+qYYpcbCqtmPNrT0sWLNYLMlyrDTWlprAyZMTbHRn7qYMhlx5lDhvO43ctzc8kOnZLCbKF6aI7WVoE9PP81eAqRdklSCvqs+xeAMHiYOYwQAAAA==[0m[Pipeline] stage
+[8mha:////4Okabx5lcMiheko0b3yn/BQpp699TLw4QtOlV2OosROEAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] { (docker build/push)
+[8mha:////4E8J7v3uEW42cyqNCI4MBhne/gTkTGs44mlLpwyrrHZ1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] withEnv
+[8mha:////4AjOmbMiTiU+Q4qI6kJbF6pcdoT6t9SFFHcQjxh45ZFFAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] {
+[8mha:////4Pub5qPA4oWPzH8ZtglWbvA9ziVZBWuK0FyXtdFn+hnbAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] withDockerRegistry
+$ docker login -u infovein69 -p ******** https://index.docker.io/v1/
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+Login Succeeded
+[8mha:////4HpRFPXejwAmJlRg30aVMClyvu0XPNUm9DJiAe2NOGywAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] {
+[8mha:////4IRVapWXptVCAW9djRC5u6cG9OhtiovkZfeLOnR3C4iBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAQVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/4iFt7vgAAAA==[0m[Pipeline] isUnix
+[8mha:////4CRTldynS89MAUmv0Ng0tJLvuGoc5LKCZwEbtHAryApYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAublAYr4AAAA=[0m[Pipeline] sh
++ docker build -t infovein69/docker-nodejs-demo:ebd26c7 .
+Sending build context to Docker daemon   6.03MB
+Step 1/6 : FROM node:4.6
+ ---> e834398209c1
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> f4cbcbe1b64c
+Step 3/6 : ADD . /app
+ ---> 7282e6be162d
+Step 4/6 : RUN npm install
+ ---> Running in 8800ac54184a
+[91mnpm[0m[91m [0m[91minfo it worked if it ends with ok
+[0m[91mnpm info using npm@2.15.11
+[0m[91mnpm info using node@v4.6.2
+[0m[91mnpm [0m[91minfo [0m[91mpreinstall myapp@0.0.1
+[0m[91mnpm info[0m[91m build /app
+[0m[91mnpm info linkStuff myapp@0.0.1
+[0m[91mnpm[0m[91m info install[0m[91m myapp@0.0.1
+[0m[91mnpm [0m[91minfo [0m[91mpostinstall myapp@0.0.1
+[0m[91mnpm info[0m[91m prepublish myapp@0.0.1
+[0m[91mnpm info ok 
+[0mRemoving intermediate container 8800ac54184a
+ ---> 0bc4f506bc25
+Step 5/6 : EXPOSE 3000
+ ---> Running in 90e70c5cfc1a
+Removing intermediate container 90e70c5cfc1a
+ ---> 497cefdd1069
+Step 6/6 : CMD npm start
+ ---> Running in fb6dc95f4f77
+Removing intermediate container fb6dc95f4f77
+ ---> f6fa5270f9e3
+Successfully built f6fa5270f9e3
+Successfully tagged infovein69/docker-nodejs-demo:ebd26c7
+[8mha:////4BTwn6NIp3tBhIjwH1Wl9CvPsRYQHTZra5sjsS5K913eAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAeuptSb4AAAA=[0m[Pipeline] isUnix
+[8mha:////4AJUSCtvFoU1pKERVhheZdkVRyVBboxvYvXwNrPXJTKCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAAVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw8723ZQvgAAAA==[0m[Pipeline] sh
++ docker tag infovein69/docker-nodejs-demo:ebd26c7 index.docker.io/infovein69/docker-nodejs-demo:ebd26c7
+[8mha:////4Gvh9OUnvGo6oXqNSVZFkkFlyXqLqXXntNPXR+ngSsBQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLShAIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVkfcu1r/wH8TTcfvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4P8ScYhcrIrQKJk1rCvozT4m8nd6WEaAxWlcLoa4Kj22AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpSIEQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAcw+Qbk/5Kpr/wG9fCwGvgAAAA==[0m[Pipeline] sh
++ docker push index.docker.io/infovein69/docker-nodejs-demo:ebd26c7
+The push refers to repository [docker.io/infovein69/docker-nodejs-demo]
+ea1745876c57: Preparing
+deb23da5891f: Preparing
+e1da644611ce: Preparing
+d79093d63949: Preparing
+87cbe568afdd: Preparing
+787c930753b4: Preparing
+9f17712cba0b: Preparing
+787c930753b4: Waiting
+223c0d04a137: Preparing
+fe4c16cbf7a4: Preparing
+9f17712cba0b: Waiting
+223c0d04a137: Waiting
+fe4c16cbf7a4: Waiting
+deb23da5891f: Layer already exists
+e1da644611ce: Layer already exists
+87cbe568afdd: Layer already exists
+d79093d63949: Layer already exists
+787c930753b4: Layer already exists
+9f17712cba0b: Layer already exists
+223c0d04a137: Layer already exists
+fe4c16cbf7a4: Layer already exists
+ea1745876c57: Pushed
+ebd26c7: digest: sha256:0c27718ded39dd1c7d394b33a2f8ca48a318e608ffdc830176da9214f3cd752f size: 2212
+[8mha:////4MibbI+y9wx/lQ4ibmjL4aKcF+9rJkTr5XXrt4xg1R3oAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSABJCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9WLFcwvgAAAA==[0m[Pipeline] }
+[8mha:////4N+yteaZrapDgied4bwV41gh2wIfSLp8B1H1eaIonSM1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgEBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9lzwyMvgAAAA==[0m[Pipeline] // withDockerRegistry
+[8mha:////4AtDAPLhAv/JRO8oiv5TCoW+pfRSejrl/DemqCR1ehk7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgEBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w8hYOXtvgAAAA==[0m[Pipeline] }
+[8mha:////4J47+70BQ/x60iggC5bcBDNr3M1Uc+tMud89cs5lcUnCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSABJCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w8Sg75RvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4DN6WhFPRueimzweRQkcVkflaTdBoBDfGcGasqiNM8CXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCATQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtdu/wH9mVDevgAAAA==[0m[Pipeline] }
+[8mha:////4Gxos+EouIneUFP7ev/4UtF44amMOEkyNkYdpzX5xJF1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRUkSDqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkF52Oeq6w/OegtivgAAAA==[0m[Pipeline] // stage
+[8mha:////4CXTabfbEoxUKyisoNBBjGyyF08u9cJcKf3aIlW0J4RjAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AF1IgLW9AAAA[0m[Pipeline] }
+[8mha:////4BsRe3AWBQ4+p7f8Qy+VsFjCPPU0+ny43qBiEix6QC5VAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IMJC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHTvSEFr0AAAA=[0m[Pipeline] // node
+[8mha:////4MJ02lnmr9dpGHW3AbXL6IHWAATPFNthsCbfigLko6m+AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AMgYo9O9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

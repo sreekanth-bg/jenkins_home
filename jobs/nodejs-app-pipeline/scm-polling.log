@@ -1,0 +1,13 @@
+Started on Dec 1, 2020 10:44:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision fd84d6f425823dc08555c2b8e3ca5973e99bc94d (refs/remotes/origin/master)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+ > git ls-remote -h -- https://github.com/sreekanth-bg/docker-demo.git # timeout=10
+Found 1 remote heads on https://github.com/sreekanth-bg/docker-demo.git
+[poll] Latest remote head revision on refs/heads/master is: fd84d6f425823dc08555c2b8e3ca5973e99bc94d - already built by 10
+Done. Took 0.13 sec
+No changes

@@ -1,0 +1,10 @@
+commit 8ae5050f42059817b8c234bfde0d16b2fe41ef7d
+tree 3e286764996e0917f94ff3a4d0ec7b223213d949
+parent 39eac369d390be1c757345d2663c55b4afb149bf
+author Sreekanth B G <sreekanth.bg@gmail.com> 2020-12-01 13:35:44 +0530
+committer Sreekanth B G <sreekanth.bg@gmail.com> 2020-12-01 13:35:44 +0530
+
+    changed docker image tag
+
+
+:100644 100644 0a2a530ef822277f5cb90b55613c19224aa88e32 3e231a273de831978352dcb7f214041a16e3fb5e M	misc/Jenkinsfile.v2
